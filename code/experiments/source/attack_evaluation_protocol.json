@@ -1,0 +1,152 @@
+{
+  "status": "FROZEN_BEFORE_NEW_CONFIRMATION_SEEDS_EXECUTED",
+  "seeds": [
+    739001,
+    739002,
+    739003,
+    739004,
+    739005,
+    739006,
+    739007,
+    739008,
+    739009,
+    739010,
+    739011,
+    739012,
+    739013,
+    739014,
+    739015,
+    739016,
+    739017,
+    739018,
+    739019,
+    739020,
+    739021,
+    739022,
+    739023,
+    739024,
+    739025,
+    739026,
+    739027,
+    739028,
+    739029,
+    739030,
+    739031,
+    739032,
+    739033,
+    739034,
+    739035,
+    739036,
+    739037,
+    739038,
+    739039,
+    739040
+  ],
+  "span": 450.0,
+  "anchor_truths": [
+    25.0,
+    115.0,
+    205.0,
+    295.0,
+    385.0,
+    475.0
+  ],
+  "profiles": {
+    "exact": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "heterogeneous": [
+      2,
+      5,
+      10,
+      20,
+      40,
+      80
+    ]
+  },
+  "costs": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "budget": 4,
+  "target_distribution": "U[0,500]",
+  "primary": "MLNI_JSAC2022__native",
+  "strong_secondary": "MLNI_JSAC2022__weighted_source_affine",
+  "bootstrap_seed": 819003,
+  "bootstrap_repetitions": 10000,
+  "original_attack_protocol": {
+    "status": "FROZEN_BEFORE_ATTACK_EXECUTION",
+    "selection": {
+      "span": 450,
+      "budget": 4,
+      "policy": "MinimaxPairTable",
+      "scenario": "affine_honest"
+    },
+    "target_shifts": [
+      -80,
+      -20,
+      -5,
+      5,
+      20,
+      80
+    ],
+    "spoof_gains": [
+      0.7,
+      1.3
+    ],
+    "spoof_targets": [
+      0,
+      250,
+      500
+    ],
+    "translation_controls": [
+      -200,
+      200
+    ],
+    "actual_attackers": [
+      7,
+      8
+    ],
+    "spec": {
+      "target": [
+        0.0,
+        500.0
+      ],
+      "gain_bounds": [
+        0.7,
+        1.3
+      ],
+      "epsilon": 5.0,
+      "f": 2
+    },
+    "base_protocol_hash": "056fe2bb1d4a2d4ed418b70b0bb1f6174067ce8c493b3cee74d9ba60933699e1",
+    "source_hashes": {
+      "source_bridge_attack_benchmark.py": "9f7a4d200bfc39d975566a79db440dd8d58d9cc321c3ce037d5ecad027ffeae8",
+      "source_bridge_attack_benchmark_protocol.md": "d57e84083570947398ff8d3dde7a8a0b0b70b89dbc4704da7bd9998ba2b2f9ff",
+      "source_bridge_span_diagnostic.py": "7c1d425e77983ffc384d85e4cf57f085113a54dddeb8af75759192bda662a7d4",
+      "source_bridge_nominal_projection.py": "f4b21359107e1676368033f288d62c5749140cdae9408d198431f4e7f2993bd9",
+      "source_bridge_certified_reference.py": "7fde2b1d6c0182e8af11baba1db71affad9ece377169445cdbfb1aba72f6f202",
+      "source_bridge_packet_inference.py": "c2ef07f6bf2923a705b645c52a02b7489b57fbd343e4d5a768f3c43ea35f2f1b",
+      "results/source_bridge_span_diagnostic_purchased_manifest.json": "3a8f22ea97296551d91cbb2afa78b9d7750c0e9dbdecc448322fcf5570a5397e",
+      "results/source_bridge_span_diagnostic_purchased_inputs.npz": "a7c704cbc4873b58b423e182f22535e82378279a8d1dc2c5932f8122bb16a1a7",
+      "results/source_bridge_span_diagnostic_evaluator_truth.npz": "dc6382921843e684e04d7db1858d8f1398a308ce5575a65d442ff0ac1817cd4d"
+    }
+  },
+  "source_hashes": {
+    "source_bridge_attack_confirmation.py": "a335b450ab8d8e23c1f2415894dc3e56db25b07ead83a78ed7e7b0acfb70e264",
+    "source_bridge_attack_confirmation_protocol.md": "1a7f0b1d98d860ccab0348f52b63a00204c2fcb78035fc0373815d0ea4de0d51",
+    "source_bridge_additive_design.py": "83988817aa1313f7469ebd5a9453c3949b2e3e870727bbaf6b83437ad5f1bdca",
+    "source_bridge_anchor_design.py": "0e1ccd010a30abf9d1cf27ea315c99596d35f13f70fc11b18fe6628fa6b9d847",
+    "source_bridge_attack_benchmark.py": "9f7a4d200bfc39d975566a79db440dd8d58d9cc321c3ce037d5ecad027ffeae8",
+    "source_bridge_attack_benchmark_protocol.json": "e2d16cb3f38c47e5e4512527ec5af5d5116467d04cce6180b6c0a2dc0b457efc"
+  }
+}

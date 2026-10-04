@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "budget_cases": 240,
+  "precision_cases": 480,
+  "all_subset_rank_checks": 720,
+  "complementarity_pairs": 28800,
+  "positive_witnesses": 1735,
+  "zero_single_positive_pair": 160,
+  "production_greedy_imported": false,
+  "scope": "Independent exact-rational reimplementation of greedy choice, optimum ranking, and all complementarity arithmetic."
+}

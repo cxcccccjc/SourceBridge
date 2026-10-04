@@ -1,0 +1,883 @@
+{
+  "font": "Times New Roman / STIX math",
+  "publication_width_inches": 7.16,
+  "layout": "1 x 4",
+  "minimum_font_pt": 7.5,
+  "styles": {
+    "SourceBridge": [
+      "#C43C39",
+      "-",
+      "o"
+    ],
+    "JB-RobustD": [
+      "#3973A6",
+      "--",
+      "s"
+    ],
+    "Greedy": [
+      "#238064",
+      "-.",
+      "^"
+    ],
+    "Greedy + cleanup": [
+      "#8859A3",
+      ":",
+      "D"
+    ],
+    "CRH + WLS": [
+      "#3973A6",
+      "--",
+      "s"
+    ],
+    "EPTD + WLS": [
+      "#CC8C22",
+      "-.",
+      "^"
+    ],
+    "FETD-D + WLS": [
+      "#238064",
+      ":",
+      "D"
+    ],
+    "FETD-AK + WLS": [
+      "#8859A3",
+      "--",
+      "v"
+    ],
+    "WLS median": [
+      "#555555",
+      "-.",
+      "P"
+    ],
+    "Midpoint": [
+      "#927157",
+      ":",
+      "+"
+    ],
+    "Enumeration": [
+      "#303030",
+      "--",
+      "s"
+    ],
+    "LP catalog": [
+      "#8D8D8D",
+      ":",
+      "^"
+    ],
+    "Exact": [
+      "#315A67",
+      "-.",
+      "P"
+    ],
+    "Heterogeneous": [
+      "#996413",
+      ":",
+      "X"
+    ]
+  },
+  "data_sha256": {
+    "end_to_end_raw.json": "6af1b7abf314ccc4e4a7e9446cb440bdb6c0b7444b2e414af3fa90ab0d8e8813",
+    "end_to_end_verified.json": "06dd4ffac76f43504a213efb42d92586caa9d76c2b35fa0dba7f5fee867b6418",
+    "greedy_cleanup_results.json": "c52010ea325b90420d9aba115208863b15911acc5b7ed92bf7ec56810fc27b92",
+    "greedy_control_results.json": "ab0533034d4c68222b2af2c35878c5263dc1cb82adc66d5b151e1dd00fe2cda0",
+    "inference_timing_distribution.json": "c9ed2c448908d6d1c467cf8c171cfb9c08d7d59800c40c1d4cbf449970fe81ae",
+    "metrics.json": "054590a480c846094a77424570b6d076dd69a6cb73c17925d4595be9ba7227ba",
+    "plot_metrics.json": "0a98847f9f6add71df0710c49a3804eea567bf1eff18d736a97a9eb17c5ee487",
+    "procurement_runs.json": "b8ae461f4e322d53cafd0e14fad62fcafb712c086316422dca81f73d06619ff6"
+  },
+  "figures": {
+    "procurement": {
+      "sources": [
+        "plot_metrics.json"
+      ],
+      "scope": "480 requests, 120 pools; cost panels use all 329 jointly feasible requests; budget CDF uses 240 decisions",
+      "interval": "20,000 paired whole-seed bootstrap draws, 95%",
+      "panels": [
+        "mean savings by radius",
+        "all-request feasibility by profile",
+        "exact-cost match rate",
+        "budget radius gaps"
+      ],
+      "profile_legend": "Exact/Heterogeneous key inside panel b, lower right; outside shared key contains methods only",
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "procurement_regimes": {
+      "sources": [
+        "plot_metrics.json",
+        "procurement_runs.json",
+        "greedy_control_results.json",
+        "greedy_cleanup_results.json"
+      ],
+      "scope": "All 329 feasible requests; E/H denote exact/heterogeneous. Six strata pool radii. No zero-saving request omitted.",
+      "box": "quartiles, median, full minimum/maximum, every request shown",
+      "panels": [
+        "JB saving distributions",
+        "greedy saving distributions",
+        "cleanup saving distributions",
+        "mean anchor-report fees excluding common fixed charge"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "joint_selection": {
+      "sources": [
+        "procurement_runs.json",
+        "greedy_control_results.json",
+        "greedy_cleanup_results.json",
+        "plot_metrics.json"
+      ],
+      "scope": "329 feasible requests; all 120 pools for complementarity",
+      "fee_means": [
+        [
+          "exact",
+          "SourceBridge",
+          393.0,
+          16.25
+        ],
+        [
+          "exact",
+          "JB-RobustD",
+          393.0,
+          26.7
+        ],
+        [
+          "exact",
+          "Greedy",
+          393.0,
+          17.05
+        ],
+        [
+          "exact",
+          "Greedy + cleanup",
+          393.0,
+          16.5
+        ],
+        [
+          "heterogeneous",
+          "SourceBridge",
+          28.0,
+          15.885906040268456
+        ],
+        [
+          "heterogeneous",
+          "JB-RobustD",
+          28.0,
+          28.268456375838927
+        ],
+        [
+          "heterogeneous",
+          "Greedy",
+          28.0,
+          17.335570469798657
+        ],
+        [
+          "heterogeneous",
+          "Greedy + cleanup",
+          28.0,
+          16.308724832214764
+        ]
+      ],
+      "complementarity": "maximum positive interval-width complementarity per pool; 240 set/pair combinations per pool; min/max whiskers",
+      "cleanup": "coincident requests merged; marker area 9+5*sqrt(count); diagonal is unchanged excess fee",
+      "panels": [
+        "complete support counts",
+        "fixed/anchor fee decomposition",
+        "all complementarity distributions",
+        "all cleanup transitions"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "robustness": {
+      "sources": [
+        "metrics.json",
+        "plot_metrics.json"
+      ],
+      "scope": "all 14 fixed conditions, heterogeneous profile in panels a/b; both profiles in c/d. Panel a retains all seven method/control series. Panel b shows six method series; FETD-D + WLS is tabulated separately; its full comparison remains in Tables II/III. The nominal estimator equals SourceBridge and is explained in prose without a duplicate graphical series. Two whole-packet translations remain separate controls.",
+      "anchor_axis": "first 3 q values g=0.7; next 3 g=1.3; R reversed anchors; line gaps separate gain groups/reversal",
+      "attack_rmse": {
+        "SourceBridge": [
+          3.070206976942986,
+          3.804874893970918,
+          3.3388564688009175,
+          3.0020597776014863,
+          2.9851459619752694,
+          3.3876991757296353,
+          2.99502390119099,
+          3.268857363263968,
+          3.075444203969177,
+          2.945398780029744,
+          3.291563287203929,
+          2.947905147888176,
+          2.9474843664465675,
+          3.028769836039116
+        ],
+        "CRH + WLS": [
+          4.24697021670545,
+          4.38932580732513,
+          3.570329972327653,
+          3.0810042982024233,
+          2.9830423045219594,
+          3.7805309055166725,
+          3.919549309125311,
+          4.1395429517935804,
+          3.6031891964483767,
+          3.1439111081028397,
+          4.1299461356729985,
+          3.2870091662387733,
+          3.137322208592202,
+          3.105264956246471
+        ],
+        "EPTD + WLS": [
+          4.3281026921432915,
+          3.6998008544992125,
+          3.5035801072148254,
+          3.155324067229102,
+          3.0547791312834827,
+          3.1517137432434463,
+          3.696766093527241,
+          3.868818215661473,
+          4.7253139637435355,
+          8.219179575797458,
+          4.545396470101104,
+          6.631133587504157,
+          13.612711974355754,
+          3.1543140576537407
+        ],
+        "FETD-D + WLS": [
+          3.87792050660799,
+          3.618906890427054,
+          3.4213529247541956,
+          3.1489095793282313,
+          3.0821988108847083,
+          3.18731933884662,
+          3.824636482372404,
+          3.0179554155516137,
+          2.8460488414051355,
+          2.6738634515756527,
+          2.981594865186107,
+          2.6787771845733412,
+          2.6792897281508683,
+          3.1547635928451783
+        ],
+        "FETD-AK + WLS": [
+          7.102077388092854,
+          5.101487953959402,
+          3.217334271275038,
+          2.6689765185766032,
+          2.8790347167992745,
+          4.529757309924597,
+          6.830907068684671,
+          5.98964447223805,
+          6.506868573249447,
+          6.551403362762112,
+          6.631411329090791,
+          6.42302051733978,
+          8.540871667270396,
+          2.6775491009555674
+        ],
+        "WLS median": [
+          4.030540362403828,
+          3.960243984322582,
+          3.635140669922524,
+          3.147827539894216,
+          3.065242293222853,
+          3.3576774303929056,
+          3.4551513325004675,
+          3.838820666700709,
+          3.599173764775915,
+          3.4551513325004675,
+          4.030540362403828,
+          3.4551513325004675,
+          3.4551513325004675,
+          3.1746963058523616
+        ],
+        "Midpoint": [
+          4.24101451842547,
+          5.0995119948014125,
+          4.594577838444639,
+          4.371904099200629,
+          4.471526917791208,
+          5.005663857065183,
+          4.058333544998117,
+          5.0330837361655005,
+          4.042856832496011,
+          3.9026147591720055,
+          4.47132648665195,
+          4.065396243172181,
+          3.9026147591720055,
+          4.381272247634425
+        ]
+      },
+      "displayed_attack_rmse": {
+        "a": {
+          "SourceBridge": [
+            3.070206976942986,
+            3.804874893970918,
+            3.3388564688009175,
+            3.0020597776014863,
+            2.9851459619752694,
+            3.3876991757296353,
+            2.99502390119099
+          ],
+          "CRH + WLS": [
+            4.24697021670545,
+            4.38932580732513,
+            3.570329972327653,
+            3.0810042982024233,
+            2.9830423045219594,
+            3.7805309055166725,
+            3.919549309125311
+          ],
+          "EPTD + WLS": [
+            4.3281026921432915,
+            3.6998008544992125,
+            3.5035801072148254,
+            3.155324067229102,
+            3.0547791312834827,
+            3.1517137432434463,
+            3.696766093527241
+          ],
+          "FETD-D + WLS": [
+            3.87792050660799,
+            3.618906890427054,
+            3.4213529247541956,
+            3.1489095793282313,
+            3.0821988108847083,
+            3.18731933884662,
+            3.824636482372404
+          ],
+          "FETD-AK + WLS": [
+            7.102077388092854,
+            5.101487953959402,
+            3.217334271275038,
+            2.6689765185766032,
+            2.8790347167992745,
+            4.529757309924597,
+            6.830907068684671
+          ],
+          "WLS median": [
+            4.030540362403828,
+            3.960243984322582,
+            3.635140669922524,
+            3.147827539894216,
+            3.065242293222853,
+            3.3576774303929056,
+            3.4551513325004675
+          ],
+          "Midpoint": [
+            4.24101451842547,
+            5.0995119948014125,
+            4.594577838444639,
+            4.371904099200629,
+            4.471526917791208,
+            5.005663857065183,
+            4.058333544998117
+          ]
+        },
+        "b": {
+          "SourceBridge": [
+            3.268857363263968,
+            3.075444203969177,
+            2.945398780029744,
+            3.291563287203929,
+            2.947905147888176,
+            2.9474843664465675,
+            3.028769836039116
+          ],
+          "CRH + WLS": [
+            4.1395429517935804,
+            3.6031891964483767,
+            3.1439111081028397,
+            4.1299461356729985,
+            3.2870091662387733,
+            3.137322208592202,
+            3.105264956246471
+          ],
+          "EPTD + WLS": [
+            3.868818215661473,
+            4.7253139637435355,
+            8.219179575797458,
+            4.545396470101104,
+            6.631133587504157,
+            13.612711974355754,
+            3.1543140576537407
+          ],
+          "FETD-AK + WLS": [
+            5.98964447223805,
+            6.506868573249447,
+            6.551403362762112,
+            6.631411329090791,
+            6.42302051733978,
+            8.540871667270396,
+            2.6775491009555674
+          ],
+          "WLS median": [
+            3.838820666700709,
+            3.599173764775915,
+            3.4551513325004675,
+            4.030540362403828,
+            3.4551513325004675,
+            3.4551513325004675,
+            3.1746963058523616
+          ],
+          "Midpoint": [
+            5.0330837361655005,
+            4.042856832496011,
+            3.9026147591720055,
+            4.47132648665195,
+            4.065396243172181,
+            3.9026147591720055,
+            4.381272247634425
+          ]
+        }
+      },
+      "axis_limits": {
+        "a": [
+          0,
+          8
+        ],
+        "b": [
+          0,
+          16
+        ]
+      },
+      "legend_scope": "FETD-D + WLS (a) explicitly restricts that key to panel a; the other six method keys apply to both a and b",
+      "panels": [
+        "all target shifts plus clean zero",
+        "six anchor spoofing conditions plus reversal, six displayed series",
+        "all 56 public-pool admission rates",
+        "all 426 target/profile error/radius observations"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "scaling": {
+      "sources": [
+        "metrics.json",
+        "end_to_end_verified.json",
+        "inference_timing_distribution.json"
+      ],
+      "scope": "16 matched selection conditions; 3 runs per batch condition; 6,469 recorded distinct fits per module",
+      "interval": "complete batch medians and min/max of 3 alternating runs; inference quartiles, 1.5-IQR whiskers, every outlier",
+      "panels": [
+        "catalog and selection",
+        "K=1 whole batches",
+        "K=10 whole batches",
+        "complete inference timing distributions"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "supp_procurement_coverage": {
+      "sources": [
+        "plot_metrics.json"
+      ],
+      "scope": "all 480 requests, all 329 feasible requests, all 20 seed clusters",
+      "seed_mean_savings_percent": {
+        "JB-RobustD": [
+          12.85714285714286,
+          13.06340718105424,
+          15.54373361013986,
+          9.78896103896104,
+          6.935298317994289,
+          13.381543680646374,
+          11.138273491214669,
+          16.93095004310758,
+          8.15812440495081,
+          8.505440616424291,
+          13.879870129870131,
+          11.974789915966388,
+          11.566558441558442,
+          8.350567236635152,
+          18.18045236013986,
+          8.15812440495081,
+          7.568984949331154,
+          8.15812440495081,
+          14.383561643835616,
+          6.527339593406389
+        ],
+        "Greedy": [
+          1.0227272727272727,
+          0.7640607396993828,
+          0.7705479452054794,
+          3.7149750933997505,
+          0.0,
+          1.5882352941176472,
+          0.8272058823529412,
+          1.0100251311188813,
+          1.0327857074432418,
+          0.848627601246457,
+          0.3778294074346706,
+          1.0886172650878534,
+          0.0,
+          2.4497481684981683,
+          0.12335526315789473,
+          0.9016668263243606,
+          1.3719512195121952,
+          0.13111888111888112,
+          1.69218372280419,
+          0.0
+        ],
+        "Greedy + cleanup": [
+          1.0227272727272727,
+          0.0,
+          0.7705479452054794,
+          0.0,
+          0.0,
+          0.0,
+          0.8272058823529412,
+          0.0,
+          0.0,
+          0.0,
+          0.25695780729337775,
+          1.0886172650878534,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.7705479452054794,
+          0.0,
+          1.69218372280419,
+          0.0
+        ]
+      },
+      "panels": [
+        "all exact feasibility strata",
+        "all heterogeneous feasibility strata",
+        "all request savings",
+        "all seed-level means"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "supp_conditional_inference": {
+      "sources": [
+        "metrics.json",
+        "plot_metrics.json"
+      ],
+      "scope": "all 426 target/profile events; observed error finite attack-library maximum; certificate radius computed before reports",
+      "equality": "proper MLNI and SourceBridge event errors exactly equal in both profiles",
+      "panels": [
+        "exact radius/error",
+        "heterogeneous radius/error",
+        "exact all-event ECDF",
+        "heterogeneous all-event ECDF"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    },
+    "catalog_reuse": {
+      "sources": [
+        "metrics.json",
+        "end_to_end_raw.json"
+      ],
+      "scope": "16 selection conditions and all 36 retained batch measurements; warmups omitted from summaries but retained in source",
+      "interval": "batchwise derived ratios; medians and complete 3-run ranges",
+      "derived_batches": [
+        {
+          "K": 1,
+          "n": 8,
+          "method": "enumeration",
+          "amortized_seconds": [
+            0.06963779998477548,
+            0.07009590000961907,
+            0.06990940001560375
+          ],
+          "catalog_share_percent": [
+            96.0317528692381,
+            96.01203492604975,
+            96.02313850396487
+          ]
+        },
+        {
+          "K": 1,
+          "n": 32,
+          "method": "enumeration",
+          "amortized_seconds": [
+            1.1824991999892518,
+            1.1998849000083283,
+            1.2110519999987446
+          ],
+          "catalog_share_percent": [
+            83.98451347860329,
+            83.9991402504349,
+            82.6106971459378
+          ]
+        },
+        {
+          "K": 1,
+          "n": 64,
+          "method": "enumeration",
+          "amortized_seconds": [
+            6.968615699996008,
+            6.9256791999796405,
+            6.922363199992105
+          ],
+          "catalog_share_percent": [
+            56.50093604691051,
+            56.79183205582896,
+            56.76290865517776
+          ]
+        },
+        {
+          "K": 1,
+          "n": 8,
+          "method": "fast",
+          "amortized_seconds": [
+            0.06941870000446215,
+            0.07012809999287128,
+            0.06911660000332631
+          ],
+          "catalog_share_percent": [
+            96.84609479212921,
+            96.82851810160055,
+            96.90190199363605
+          ]
+        },
+        {
+          "K": 1,
+          "n": 32,
+          "method": "fast",
+          "amortized_seconds": [
+            1.0256291000114288,
+            1.0108480999770109,
+            1.0089733000204433
+          ],
+          "catalog_share_percent": [
+            99.44235201488148,
+            99.45010531453974,
+            99.43186801654689
+          ]
+        },
+        {
+          "K": 1,
+          "n": 64,
+          "method": "fast",
+          "amortized_seconds": [
+            3.9847913999983575,
+            4.141258299991023,
+            3.9413716999988537
+          ],
+          "catalog_share_percent": [
+            99.40652853302146,
+            99.42967575864436,
+            99.38754063673169
+          ]
+        },
+        {
+          "K": 10,
+          "n": 8,
+          "method": "enumeration",
+          "amortized_seconds": [
+            0.009637159999692812,
+            0.009538169999723322,
+            0.009565200001816265
+          ],
+          "catalog_share_percent": [
+            70.13051562027383,
+            69.99948628596555,
+            69.96926357464372
+          ]
+        },
+        {
+          "K": 10,
+          "n": 32,
+          "method": "enumeration",
+          "amortized_seconds": [
+            0.3034207799995784,
+            0.3032252599979984,
+            0.3017403899983037
+          ],
+          "catalog_share_percent": [
+            33.00380745220534,
+            32.8159171173451,
+            33.13769164329463
+          ]
+        },
+        {
+          "K": 10,
+          "n": 64,
+          "method": "enumeration",
+          "amortized_seconds": [
+            3.551257110000006,
+            3.596498520000023,
+            3.55795568000176
+          ],
+          "catalog_share_percent": [
+            11.081514455631314,
+            10.94796140778445,
+            11.03085887793354
+          ]
+        },
+        {
+          "K": 10,
+          "n": 8,
+          "method": "fast",
+          "amortized_seconds": [
+            0.008974850000231526,
+            0.008824430001550355,
+            0.008787389998906292
+          ],
+          "catalog_share_percent": [
+            75.62165383473442,
+            75.85215135662915,
+            75.82672444193061
+          ]
+        },
+        {
+          "K": 10,
+          "n": 32,
+          "method": "fast",
+          "amortized_seconds": [
+            0.10652821999974549,
+            0.10743478999938816,
+            0.10671090999967418
+          ],
+          "catalog_share_percent": [
+            94.70484909947513,
+            94.62825775765573,
+            94.70004519703141
+          ]
+        },
+        {
+          "K": 10,
+          "n": 64,
+          "method": "fast",
+          "amortized_seconds": [
+            0.41486775999946984,
+            0.41581750999903305,
+            0.4127510500024073
+          ],
+          "catalog_share_percent": [
+            94.76361093941696,
+            94.76425608004743,
+            94.6715483822752
+          ]
+        }
+      ],
+      "panels": [
+        "all matched phase times",
+        "K=1 amortized cost",
+        "K=10 amortized cost",
+        "catalog fraction of whole batch"
+      ],
+      "horizontal_grid": {
+        "major_color": "#D2D2D2",
+        "major_width_pt": 0.28,
+        "minor_color": "#E1E1E1",
+        "minor_width_pt": 0.16,
+        "direction": "horizontal",
+        "linear_subdivisions": 4,
+        "log_subs": [
+          1,
+          2,
+          5
+        ],
+        "minor_tick_labels": false
+      }
+    }
+  },
+  "horizontal_grid": {
+    "major_color": "#D2D2D2",
+    "major_width_pt": 0.28,
+    "minor_color": "#E1E1E1",
+    "minor_width_pt": 0.16,
+    "direction": "horizontal",
+    "linear_subdivisions": 4,
+    "log_subs": [
+      1,
+      2,
+      5
+    ],
+    "minor_tick_labels": false
+  },
+  "rendering": "Data-derived coordinates and intervals. Horizontal guides: 0.28-pt major and 0.16-pt minor; categorical rows use one guide per stratum.",
+  "display_scope": "Paired accuracy intervals appear in a manuscript table. Proper MLNI and SourceBridge coincide, so a single curve represents their predictions. FETD-D + WLS appears in robustness(a); the complete numerical comparison appears in Tables II and III.",
+  "evidence_scope": "All plotting inputs retain their recorded data and uncertainty definitions."
+}

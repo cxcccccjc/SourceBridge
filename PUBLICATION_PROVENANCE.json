@@ -1,0 +1,710 @@
+{
+  "status": "PASS",
+  "scope": "Only local-machine path strings and their distribution manifests were normalized. Original source hashes remain historical provenance. No scientific Python implementation, numeric prediction, condition, or figure was changed.",
+  "files": [
+    {
+      "file": "code/experiments/metrics.json",
+      "original_sha256": "054590a480c846094a77424570b6d076dd69a6cb73c17925d4595be9ba7227ba",
+      "public_sha256": "3381a1b67803463c965065551ee3cf02a8fc36bcf54d9e45bf86b1c181421559",
+      "changed_fields": [
+        {
+          "json_path": "/provenance/source_bridge_public_repaired_confirmation_protocol.json/path",
+          "replacement": "public_inference_protocol.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_summary.json/path",
+          "replacement": "source_bridge_public_repaired_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_readonly_audit.json/path",
+          "replacement": "source_bridge_public_repaired_confirmation_readonly_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_plans.json/path",
+          "replacement": "public_inference_plans.json"
+        },
+        {
+          "json_path": "/provenance/source_bridge_procurement_confirmation_protocol.json/path",
+          "replacement": "procurement_protocol.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_summary.json/path",
+          "replacement": "source_bridge_procurement_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_runs.json/path",
+          "replacement": "procurement_runs.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_independent_audit_corrected.json/path",
+          "replacement": "source_bridge_procurement_confirmation_independent_audit_corrected.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_additive_scaling_summary.json/path",
+          "replacement": "selection_scaling_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_confirmation_independent_audit.json/path",
+          "replacement": "source_bridge_attack_confirmation_independent_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_confirmation_summary.json/path",
+          "replacement": "source_bridge_attack_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_benchmark_independent_audit.json/path",
+          "replacement": "source_bridge_attack_benchmark_independent_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_confirmation_summary.json/path",
+          "replacement": "source_bridge_public_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_cells.csv/path",
+          "replacement": "public_inference_cells.csv"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_inputs.json/path",
+          "replacement": "procurement_inputs.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_5842dd1406ed28ed05e6d61bb19972cf0f72674155e3add222199a0f77c3913b.json/path",
+          "replacement": "procurement_w_5842dd1406ed28ed05e6d61bb19972cf0f72674155e3add222199a0f77c3913b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4735edf36e95d7c26bc640fdec56f70acef20846ae3edeb4d93bc568a7a83f43.json/path",
+          "replacement": "procurement_w_4735edf36e95d7c26bc640fdec56f70acef20846ae3edeb4d93bc568a7a83f43.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_c05537309e576b70edb498b60c7bc214cf4212ec1fccfaf418b83fa833fafcb2.json/path",
+          "replacement": "procurement_w_c05537309e576b70edb498b60c7bc214cf4212ec1fccfaf418b83fa833fafcb2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_92cae4374a788260065f8432376a9ed19c0f6e0e26e71391330e5f944dced3ea.json/path",
+          "replacement": "procurement_w_92cae4374a788260065f8432376a9ed19c0f6e0e26e71391330e5f944dced3ea.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f2741585bf80924598fd71bd7dbbd4c646d0172935ad3f0d481b2afda092b7e2.json/path",
+          "replacement": "procurement_w_f2741585bf80924598fd71bd7dbbd4c646d0172935ad3f0d481b2afda092b7e2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_98dd7b23c351bb51d564ca709494555b692c2518e2138c142515af360f5b7636.json/path",
+          "replacement": "procurement_w_98dd7b23c351bb51d564ca709494555b692c2518e2138c142515af360f5b7636.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_e5acc1c67fe99bca010f90198ec2ab948800a803c7cc0920cfaba7ffb724d3a4.json/path",
+          "replacement": "procurement_w_e5acc1c67fe99bca010f90198ec2ab948800a803c7cc0920cfaba7ffb724d3a4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_31543bc026cd6dc2c8656fedd096ba7f02d00023088cc0aa72322265ef3ba9d5.json/path",
+          "replacement": "procurement_w_31543bc026cd6dc2c8656fedd096ba7f02d00023088cc0aa72322265ef3ba9d5.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_66ceebe8cbafe1b1b57a7d8730d17e6bfda6238a17fe1a76dc377ca10c44ab65.json/path",
+          "replacement": "procurement_w_66ceebe8cbafe1b1b57a7d8730d17e6bfda6238a17fe1a76dc377ca10c44ab65.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_47974b1e2be46d1b2ed690c5ae0676686533bb7094b3ec6ed22af20b9bbdd305.json/path",
+          "replacement": "procurement_w_47974b1e2be46d1b2ed690c5ae0676686533bb7094b3ec6ed22af20b9bbdd305.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1e44f2079c33b0354ac604d866ba8c5ac65b0cbab7f06d2c54e0807c60065408.json/path",
+          "replacement": "procurement_w_1e44f2079c33b0354ac604d866ba8c5ac65b0cbab7f06d2c54e0807c60065408.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_306276497d7aadc367d79c790a451e704ad9947066c0d3c3b2f5a5918caed8e7.json/path",
+          "replacement": "procurement_w_306276497d7aadc367d79c790a451e704ad9947066c0d3c3b2f5a5918caed8e7.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_5e998544477464329b31a0ab04902a6ba23c004a05f7c853abc7eb47166de9f0.json/path",
+          "replacement": "procurement_w_5e998544477464329b31a0ab04902a6ba23c004a05f7c853abc7eb47166de9f0.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_acbd0a541f790c2a32cc48f8349e41a3b5725fda39a2da543fbc80e7647b0895.json/path",
+          "replacement": "procurement_w_acbd0a541f790c2a32cc48f8349e41a3b5725fda39a2da543fbc80e7647b0895.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1b349c5fc42bdc982233ea7d585f2489ad62f6b277aacea3f6346441d64cc673.json/path",
+          "replacement": "procurement_w_1b349c5fc42bdc982233ea7d585f2489ad62f6b277aacea3f6346441d64cc673.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a016fde9e1aec2c436d1e18b63499fef1a8bf9231ee0bfedde459b591a26e3f2.json/path",
+          "replacement": "procurement_w_a016fde9e1aec2c436d1e18b63499fef1a8bf9231ee0bfedde459b591a26e3f2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4ca0745fa772041887f973ed54a76171d5d093bd6d182f8312ee1d78dc10e20b.json/path",
+          "replacement": "procurement_w_4ca0745fa772041887f973ed54a76171d5d093bd6d182f8312ee1d78dc10e20b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7b5b7586d7653c4c98d2e10d81ddc9abdeb73289694ef2ba72716f587997d3a4.json/path",
+          "replacement": "procurement_w_7b5b7586d7653c4c98d2e10d81ddc9abdeb73289694ef2ba72716f587997d3a4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_cf25df54bf79cf31dd509e3a23250156c3776efee56c2afbf92589d6eab60c82.json/path",
+          "replacement": "procurement_w_cf25df54bf79cf31dd509e3a23250156c3776efee56c2afbf92589d6eab60c82.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f7600ff2c780c6ef4d604445291ec8d032921af93f1c7ff0c8d1a8693d3de6d8.json/path",
+          "replacement": "procurement_w_f7600ff2c780c6ef4d604445291ec8d032921af93f1c7ff0c8d1a8693d3de6d8.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7fe578493164599c1d6388355ba957ca91915aa226bff8b29cc31095f5e9d74e.json/path",
+          "replacement": "procurement_w_7fe578493164599c1d6388355ba957ca91915aa226bff8b29cc31095f5e9d74e.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7d03fe0da059b935d0e6672bf7505c649f0d56287676621b9175e8360a608f4f.json/path",
+          "replacement": "procurement_w_7d03fe0da059b935d0e6672bf7505c649f0d56287676621b9175e8360a608f4f.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_d1fbfcb253d8c002a6663f31046df9b174e09c48904eb78e228f61f2809efc04.json/path",
+          "replacement": "procurement_w_d1fbfcb253d8c002a6663f31046df9b174e09c48904eb78e228f61f2809efc04.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a1e462bcc003ad19fb55a8806eb4741251e3a9bcc53a8fc368a41b2ad7524a02.json/path",
+          "replacement": "procurement_w_a1e462bcc003ad19fb55a8806eb4741251e3a9bcc53a8fc368a41b2ad7524a02.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_153c768ed90fe239680c059db3f230e00bcf918bf44e0f62d54900365b539ab3.json/path",
+          "replacement": "procurement_w_153c768ed90fe239680c059db3f230e00bcf918bf44e0f62d54900365b539ab3.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4ddf9c813a7218000dc8a72e27b5a9f450fc036a4d0f75540367e68b2a4ea8ee.json/path",
+          "replacement": "procurement_w_4ddf9c813a7218000dc8a72e27b5a9f450fc036a4d0f75540367e68b2a4ea8ee.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_c398eb5aeb987c5894941d4497206c34ff8781da116897a1039a7282fc19f4aa.json/path",
+          "replacement": "procurement_w_c398eb5aeb987c5894941d4497206c34ff8781da116897a1039a7282fc19f4aa.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_45a21de2a00871454d99e38d61161eb112b953968f373cc40172775c21288da6.json/path",
+          "replacement": "procurement_w_45a21de2a00871454d99e38d61161eb112b953968f373cc40172775c21288da6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_aa083acb082ead3527ba1d917652a4f6afaceef29e2d848bc9d99d3ab3171855.json/path",
+          "replacement": "procurement_w_aa083acb082ead3527ba1d917652a4f6afaceef29e2d848bc9d99d3ab3171855.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_66b427c3bf0469723ca20a63826e8d2bfe7d662b0f1ace41774fb6b77c15a9cd.json/path",
+          "replacement": "procurement_w_66b427c3bf0469723ca20a63826e8d2bfe7d662b0f1ace41774fb6b77c15a9cd.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_3a9412678a0cb575e732aec075b4bfed48dfb7e634c8620f16888359d2c3cf4a.json/path",
+          "replacement": "procurement_w_3a9412678a0cb575e732aec075b4bfed48dfb7e634c8620f16888359d2c3cf4a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_411b6869c748c58d608c410bc86e99254dd9abe943c02815d123d1349f947eca.json/path",
+          "replacement": "procurement_w_411b6869c748c58d608c410bc86e99254dd9abe943c02815d123d1349f947eca.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_d05cb93ecb6b001e89a9aca7349c5e22be4a874a5ce6671200fa80515459604a.json/path",
+          "replacement": "procurement_w_d05cb93ecb6b001e89a9aca7349c5e22be4a874a5ce6671200fa80515459604a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4bf6ed88aa7df459353dcaedfa21f91e68063c25ccd9fee26a23a257adbb50ba.json/path",
+          "replacement": "procurement_w_4bf6ed88aa7df459353dcaedfa21f91e68063c25ccd9fee26a23a257adbb50ba.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_496811d21f8557f94b72ec36d3f10b9cee1e90399d81d0254d0fceed1712daad.json/path",
+          "replacement": "procurement_w_496811d21f8557f94b72ec36d3f10b9cee1e90399d81d0254d0fceed1712daad.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4a546a843201843998e44e4c0488a543d8d8ed168e8d077682bad46085b5f479.json/path",
+          "replacement": "procurement_w_4a546a843201843998e44e4c0488a543d8d8ed168e8d077682bad46085b5f479.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_57593643d8bbf7be2b7e2088cfb0345886d9ca6293cbf593186bc0b985924df3.json/path",
+          "replacement": "procurement_w_57593643d8bbf7be2b7e2088cfb0345886d9ca6293cbf593186bc0b985924df3.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7be8d90a3fdd632292ce6b135383c669b35d86662aa308bc8135671aafb2752b.json/path",
+          "replacement": "procurement_w_7be8d90a3fdd632292ce6b135383c669b35d86662aa308bc8135671aafb2752b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_81a76ac88f53e1ec81423aed3f2f7e25795f62d5bea0e344caa1ad8de6e8cfcf.json/path",
+          "replacement": "procurement_w_81a76ac88f53e1ec81423aed3f2f7e25795f62d5bea0e344caa1ad8de6e8cfcf.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_db3bae8b42c0ba9b77fc4fa652f154e1b583593b29b235871466b6adc65937d8.json/path",
+          "replacement": "procurement_w_db3bae8b42c0ba9b77fc4fa652f154e1b583593b29b235871466b6adc65937d8.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_71b49d86e8d3f731bb3c2e8a55f4ba8891e591b6156c012e2d947f895b45750b.json/path",
+          "replacement": "procurement_w_71b49d86e8d3f731bb3c2e8a55f4ba8891e591b6156c012e2d947f895b45750b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a1d893c09e0579c77a9ad58be2916685f39670b63d82325686c9b72008b2768c.json/path",
+          "replacement": "procurement_w_a1d893c09e0579c77a9ad58be2916685f39670b63d82325686c9b72008b2768c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_70c669abf952197fbfa99234515e215cc4de8418ec607f60ace540c0eb131045.json/path",
+          "replacement": "procurement_w_70c669abf952197fbfa99234515e215cc4de8418ec607f60ace540c0eb131045.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_52c3ee177ca249823dd117dc93dd566f0298812da8f88dd5d731348bf81310b7.json/path",
+          "replacement": "procurement_w_52c3ee177ca249823dd117dc93dd566f0298812da8f88dd5d731348bf81310b7.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_383a591ddaa67a3523c64f5c9ec31f7b43bf086ed41ecd00eb695d3c008f415c.json/path",
+          "replacement": "procurement_w_383a591ddaa67a3523c64f5c9ec31f7b43bf086ed41ecd00eb695d3c008f415c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_14cca4ebc75b3d1962675d02545e921a57ea96578118e126c431981023b1438f.json/path",
+          "replacement": "procurement_w_14cca4ebc75b3d1962675d02545e921a57ea96578118e126c431981023b1438f.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1fe018b2a750dfc7a6f92cea519a8d56a46cb72c34d0cf5266512c3ffe46c783.json/path",
+          "replacement": "procurement_w_1fe018b2a750dfc7a6f92cea519a8d56a46cb72c34d0cf5266512c3ffe46c783.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_86a3b8b78a7bce83435ceecc9aa90b39a5c249553a5b10ce89f83c80fd8f0898.json/path",
+          "replacement": "procurement_w_86a3b8b78a7bce83435ceecc9aa90b39a5c249553a5b10ce89f83c80fd8f0898.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_b2232e32a4190b28d64ebfd05a4d8cbc2ec24b144119a3a32aaff254c4b8d420.json/path",
+          "replacement": "procurement_w_b2232e32a4190b28d64ebfd05a4d8cbc2ec24b144119a3a32aaff254c4b8d420.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_b91d4e8a9ea16d31c4638e53b0007efc131c9abdaca7cbcd7517654da84901ea.json/path",
+          "replacement": "procurement_w_b91d4e8a9ea16d31c4638e53b0007efc131c9abdaca7cbcd7517654da84901ea.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_6cf727f4f38b467127ba8f7920f8783d60030835c7b08e7b653f002734dcf0e6.json/path",
+          "replacement": "procurement_w_6cf727f4f38b467127ba8f7920f8783d60030835c7b08e7b653f002734dcf0e6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_379266567c9354c792409d7821b951fb0b35b2dacc9616fb75f1cd1f50e9f197.json/path",
+          "replacement": "procurement_w_379266567c9354c792409d7821b951fb0b35b2dacc9616fb75f1cd1f50e9f197.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_554dff61edf3a05f066e3d892def28046bf50e0f73b8b8f40610198ef6e2481c.json/path",
+          "replacement": "procurement_w_554dff61edf3a05f066e3d892def28046bf50e0f73b8b8f40610198ef6e2481c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_413c334789c0c1ce0f52ecdf4fd4a438910fb76f4405b56c13960d2f4965bd7a.json/path",
+          "replacement": "procurement_w_413c334789c0c1ce0f52ecdf4fd4a438910fb76f4405b56c13960d2f4965bd7a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_047e063ea647417f758a54cb50b646ff746f5dac34fe3bff1a09e82a26d8c742.json/path",
+          "replacement": "procurement_w_047e063ea647417f758a54cb50b646ff746f5dac34fe3bff1a09e82a26d8c742.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_00ec92dbd5a97549365f6d7c17548bce72419ff8d53a33376cacd05fd073d3ab.json/path",
+          "replacement": "procurement_w_00ec92dbd5a97549365f6d7c17548bce72419ff8d53a33376cacd05fd073d3ab.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_440f2f460159e0cc1ca1c202b107e9ae37e9ea7172b07b45ec05169a5feb6ad1.json/path",
+          "replacement": "procurement_w_440f2f460159e0cc1ca1c202b107e9ae37e9ea7172b07b45ec05169a5feb6ad1.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_8652c447b0219944d34a4e592e075633952d536b2db7fa4a601411f7b3dcf652.json/path",
+          "replacement": "procurement_w_8652c447b0219944d34a4e592e075633952d536b2db7fa4a601411f7b3dcf652.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_466e21ddec2c2af90ff405ddc3fd6cb2122d0121daf75ef33ca245d15acf02e6.json/path",
+          "replacement": "procurement_w_466e21ddec2c2af90ff405ddc3fd6cb2122d0121daf75ef33ca245d15acf02e6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f3f84d37cfd16c58be56c4c1e86d034447ad2ec3e93604f180fc5ed5a4e55740.json/path",
+          "replacement": "procurement_w_f3f84d37cfd16c58be56c4c1e86d034447ad2ec3e93604f180fc5ed5a4e55740.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f9ba822f72e7b9eae449563659861c5d99b879ca9cc536bc1b7249b6a53ac7c4.json/path",
+          "replacement": "procurement_w_f9ba822f72e7b9eae449563659861c5d99b879ca9cc536bc1b7249b6a53ac7c4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_785e72c79dff618246bddd9642846059133585a7433ddc9cfbf4e786617eb267.json/path",
+          "replacement": "procurement_w_785e72c79dff618246bddd9642846059133585a7433ddc9cfbf4e786617eb267.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1dcf2551da8934c34cf207e8e93b82869dff68432a4ba90f84740f17495e6388.json/path",
+          "replacement": "procurement_w_1dcf2551da8934c34cf207e8e93b82869dff68432a4ba90f84740f17495e6388.json"
+        },
+        {
+          "json_path": "/provenance/results/spptd_msra_benchmark_summary.json/path",
+          "replacement": "spptd_msra_benchmark_summary.json"
+        }
+      ],
+      "numeric_values_unchanged": true
+    },
+    {
+      "file": "code/plots/data/metrics.json",
+      "original_sha256": "054590a480c846094a77424570b6d076dd69a6cb73c17925d4595be9ba7227ba",
+      "public_sha256": "3381a1b67803463c965065551ee3cf02a8fc36bcf54d9e45bf86b1c181421559",
+      "changed_fields": [
+        {
+          "json_path": "/provenance/source_bridge_public_repaired_confirmation_protocol.json/path",
+          "replacement": "public_inference_protocol.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_summary.json/path",
+          "replacement": "source_bridge_public_repaired_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_readonly_audit.json/path",
+          "replacement": "source_bridge_public_repaired_confirmation_readonly_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_plans.json/path",
+          "replacement": "public_inference_plans.json"
+        },
+        {
+          "json_path": "/provenance/source_bridge_procurement_confirmation_protocol.json/path",
+          "replacement": "procurement_protocol.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_summary.json/path",
+          "replacement": "source_bridge_procurement_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_runs.json/path",
+          "replacement": "procurement_runs.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_independent_audit_corrected.json/path",
+          "replacement": "source_bridge_procurement_confirmation_independent_audit_corrected.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_additive_scaling_summary.json/path",
+          "replacement": "selection_scaling_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_confirmation_independent_audit.json/path",
+          "replacement": "source_bridge_attack_confirmation_independent_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_confirmation_summary.json/path",
+          "replacement": "source_bridge_attack_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_attack_benchmark_independent_audit.json/path",
+          "replacement": "source_bridge_attack_benchmark_independent_audit.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_confirmation_summary.json/path",
+          "replacement": "source_bridge_public_confirmation_summary.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_public_repaired_confirmation_cells.csv/path",
+          "replacement": "public_inference_cells.csv"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_inputs.json/path",
+          "replacement": "procurement_inputs.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_5842dd1406ed28ed05e6d61bb19972cf0f72674155e3add222199a0f77c3913b.json/path",
+          "replacement": "procurement_w_5842dd1406ed28ed05e6d61bb19972cf0f72674155e3add222199a0f77c3913b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4735edf36e95d7c26bc640fdec56f70acef20846ae3edeb4d93bc568a7a83f43.json/path",
+          "replacement": "procurement_w_4735edf36e95d7c26bc640fdec56f70acef20846ae3edeb4d93bc568a7a83f43.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_c05537309e576b70edb498b60c7bc214cf4212ec1fccfaf418b83fa833fafcb2.json/path",
+          "replacement": "procurement_w_c05537309e576b70edb498b60c7bc214cf4212ec1fccfaf418b83fa833fafcb2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_92cae4374a788260065f8432376a9ed19c0f6e0e26e71391330e5f944dced3ea.json/path",
+          "replacement": "procurement_w_92cae4374a788260065f8432376a9ed19c0f6e0e26e71391330e5f944dced3ea.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f2741585bf80924598fd71bd7dbbd4c646d0172935ad3f0d481b2afda092b7e2.json/path",
+          "replacement": "procurement_w_f2741585bf80924598fd71bd7dbbd4c646d0172935ad3f0d481b2afda092b7e2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_98dd7b23c351bb51d564ca709494555b692c2518e2138c142515af360f5b7636.json/path",
+          "replacement": "procurement_w_98dd7b23c351bb51d564ca709494555b692c2518e2138c142515af360f5b7636.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_e5acc1c67fe99bca010f90198ec2ab948800a803c7cc0920cfaba7ffb724d3a4.json/path",
+          "replacement": "procurement_w_e5acc1c67fe99bca010f90198ec2ab948800a803c7cc0920cfaba7ffb724d3a4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_31543bc026cd6dc2c8656fedd096ba7f02d00023088cc0aa72322265ef3ba9d5.json/path",
+          "replacement": "procurement_w_31543bc026cd6dc2c8656fedd096ba7f02d00023088cc0aa72322265ef3ba9d5.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_66ceebe8cbafe1b1b57a7d8730d17e6bfda6238a17fe1a76dc377ca10c44ab65.json/path",
+          "replacement": "procurement_w_66ceebe8cbafe1b1b57a7d8730d17e6bfda6238a17fe1a76dc377ca10c44ab65.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_47974b1e2be46d1b2ed690c5ae0676686533bb7094b3ec6ed22af20b9bbdd305.json/path",
+          "replacement": "procurement_w_47974b1e2be46d1b2ed690c5ae0676686533bb7094b3ec6ed22af20b9bbdd305.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1e44f2079c33b0354ac604d866ba8c5ac65b0cbab7f06d2c54e0807c60065408.json/path",
+          "replacement": "procurement_w_1e44f2079c33b0354ac604d866ba8c5ac65b0cbab7f06d2c54e0807c60065408.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_306276497d7aadc367d79c790a451e704ad9947066c0d3c3b2f5a5918caed8e7.json/path",
+          "replacement": "procurement_w_306276497d7aadc367d79c790a451e704ad9947066c0d3c3b2f5a5918caed8e7.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_5e998544477464329b31a0ab04902a6ba23c004a05f7c853abc7eb47166de9f0.json/path",
+          "replacement": "procurement_w_5e998544477464329b31a0ab04902a6ba23c004a05f7c853abc7eb47166de9f0.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_acbd0a541f790c2a32cc48f8349e41a3b5725fda39a2da543fbc80e7647b0895.json/path",
+          "replacement": "procurement_w_acbd0a541f790c2a32cc48f8349e41a3b5725fda39a2da543fbc80e7647b0895.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1b349c5fc42bdc982233ea7d585f2489ad62f6b277aacea3f6346441d64cc673.json/path",
+          "replacement": "procurement_w_1b349c5fc42bdc982233ea7d585f2489ad62f6b277aacea3f6346441d64cc673.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a016fde9e1aec2c436d1e18b63499fef1a8bf9231ee0bfedde459b591a26e3f2.json/path",
+          "replacement": "procurement_w_a016fde9e1aec2c436d1e18b63499fef1a8bf9231ee0bfedde459b591a26e3f2.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4ca0745fa772041887f973ed54a76171d5d093bd6d182f8312ee1d78dc10e20b.json/path",
+          "replacement": "procurement_w_4ca0745fa772041887f973ed54a76171d5d093bd6d182f8312ee1d78dc10e20b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7b5b7586d7653c4c98d2e10d81ddc9abdeb73289694ef2ba72716f587997d3a4.json/path",
+          "replacement": "procurement_w_7b5b7586d7653c4c98d2e10d81ddc9abdeb73289694ef2ba72716f587997d3a4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_cf25df54bf79cf31dd509e3a23250156c3776efee56c2afbf92589d6eab60c82.json/path",
+          "replacement": "procurement_w_cf25df54bf79cf31dd509e3a23250156c3776efee56c2afbf92589d6eab60c82.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f7600ff2c780c6ef4d604445291ec8d032921af93f1c7ff0c8d1a8693d3de6d8.json/path",
+          "replacement": "procurement_w_f7600ff2c780c6ef4d604445291ec8d032921af93f1c7ff0c8d1a8693d3de6d8.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7fe578493164599c1d6388355ba957ca91915aa226bff8b29cc31095f5e9d74e.json/path",
+          "replacement": "procurement_w_7fe578493164599c1d6388355ba957ca91915aa226bff8b29cc31095f5e9d74e.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7d03fe0da059b935d0e6672bf7505c649f0d56287676621b9175e8360a608f4f.json/path",
+          "replacement": "procurement_w_7d03fe0da059b935d0e6672bf7505c649f0d56287676621b9175e8360a608f4f.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_d1fbfcb253d8c002a6663f31046df9b174e09c48904eb78e228f61f2809efc04.json/path",
+          "replacement": "procurement_w_d1fbfcb253d8c002a6663f31046df9b174e09c48904eb78e228f61f2809efc04.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a1e462bcc003ad19fb55a8806eb4741251e3a9bcc53a8fc368a41b2ad7524a02.json/path",
+          "replacement": "procurement_w_a1e462bcc003ad19fb55a8806eb4741251e3a9bcc53a8fc368a41b2ad7524a02.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_153c768ed90fe239680c059db3f230e00bcf918bf44e0f62d54900365b539ab3.json/path",
+          "replacement": "procurement_w_153c768ed90fe239680c059db3f230e00bcf918bf44e0f62d54900365b539ab3.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4ddf9c813a7218000dc8a72e27b5a9f450fc036a4d0f75540367e68b2a4ea8ee.json/path",
+          "replacement": "procurement_w_4ddf9c813a7218000dc8a72e27b5a9f450fc036a4d0f75540367e68b2a4ea8ee.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_c398eb5aeb987c5894941d4497206c34ff8781da116897a1039a7282fc19f4aa.json/path",
+          "replacement": "procurement_w_c398eb5aeb987c5894941d4497206c34ff8781da116897a1039a7282fc19f4aa.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_45a21de2a00871454d99e38d61161eb112b953968f373cc40172775c21288da6.json/path",
+          "replacement": "procurement_w_45a21de2a00871454d99e38d61161eb112b953968f373cc40172775c21288da6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_aa083acb082ead3527ba1d917652a4f6afaceef29e2d848bc9d99d3ab3171855.json/path",
+          "replacement": "procurement_w_aa083acb082ead3527ba1d917652a4f6afaceef29e2d848bc9d99d3ab3171855.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_66b427c3bf0469723ca20a63826e8d2bfe7d662b0f1ace41774fb6b77c15a9cd.json/path",
+          "replacement": "procurement_w_66b427c3bf0469723ca20a63826e8d2bfe7d662b0f1ace41774fb6b77c15a9cd.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_3a9412678a0cb575e732aec075b4bfed48dfb7e634c8620f16888359d2c3cf4a.json/path",
+          "replacement": "procurement_w_3a9412678a0cb575e732aec075b4bfed48dfb7e634c8620f16888359d2c3cf4a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_411b6869c748c58d608c410bc86e99254dd9abe943c02815d123d1349f947eca.json/path",
+          "replacement": "procurement_w_411b6869c748c58d608c410bc86e99254dd9abe943c02815d123d1349f947eca.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_d05cb93ecb6b001e89a9aca7349c5e22be4a874a5ce6671200fa80515459604a.json/path",
+          "replacement": "procurement_w_d05cb93ecb6b001e89a9aca7349c5e22be4a874a5ce6671200fa80515459604a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4bf6ed88aa7df459353dcaedfa21f91e68063c25ccd9fee26a23a257adbb50ba.json/path",
+          "replacement": "procurement_w_4bf6ed88aa7df459353dcaedfa21f91e68063c25ccd9fee26a23a257adbb50ba.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_496811d21f8557f94b72ec36d3f10b9cee1e90399d81d0254d0fceed1712daad.json/path",
+          "replacement": "procurement_w_496811d21f8557f94b72ec36d3f10b9cee1e90399d81d0254d0fceed1712daad.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_4a546a843201843998e44e4c0488a543d8d8ed168e8d077682bad46085b5f479.json/path",
+          "replacement": "procurement_w_4a546a843201843998e44e4c0488a543d8d8ed168e8d077682bad46085b5f479.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_57593643d8bbf7be2b7e2088cfb0345886d9ca6293cbf593186bc0b985924df3.json/path",
+          "replacement": "procurement_w_57593643d8bbf7be2b7e2088cfb0345886d9ca6293cbf593186bc0b985924df3.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_7be8d90a3fdd632292ce6b135383c669b35d86662aa308bc8135671aafb2752b.json/path",
+          "replacement": "procurement_w_7be8d90a3fdd632292ce6b135383c669b35d86662aa308bc8135671aafb2752b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_81a76ac88f53e1ec81423aed3f2f7e25795f62d5bea0e344caa1ad8de6e8cfcf.json/path",
+          "replacement": "procurement_w_81a76ac88f53e1ec81423aed3f2f7e25795f62d5bea0e344caa1ad8de6e8cfcf.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_db3bae8b42c0ba9b77fc4fa652f154e1b583593b29b235871466b6adc65937d8.json/path",
+          "replacement": "procurement_w_db3bae8b42c0ba9b77fc4fa652f154e1b583593b29b235871466b6adc65937d8.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_71b49d86e8d3f731bb3c2e8a55f4ba8891e591b6156c012e2d947f895b45750b.json/path",
+          "replacement": "procurement_w_71b49d86e8d3f731bb3c2e8a55f4ba8891e591b6156c012e2d947f895b45750b.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_a1d893c09e0579c77a9ad58be2916685f39670b63d82325686c9b72008b2768c.json/path",
+          "replacement": "procurement_w_a1d893c09e0579c77a9ad58be2916685f39670b63d82325686c9b72008b2768c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_70c669abf952197fbfa99234515e215cc4de8418ec607f60ace540c0eb131045.json/path",
+          "replacement": "procurement_w_70c669abf952197fbfa99234515e215cc4de8418ec607f60ace540c0eb131045.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_52c3ee177ca249823dd117dc93dd566f0298812da8f88dd5d731348bf81310b7.json/path",
+          "replacement": "procurement_w_52c3ee177ca249823dd117dc93dd566f0298812da8f88dd5d731348bf81310b7.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_383a591ddaa67a3523c64f5c9ec31f7b43bf086ed41ecd00eb695d3c008f415c.json/path",
+          "replacement": "procurement_w_383a591ddaa67a3523c64f5c9ec31f7b43bf086ed41ecd00eb695d3c008f415c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_14cca4ebc75b3d1962675d02545e921a57ea96578118e126c431981023b1438f.json/path",
+          "replacement": "procurement_w_14cca4ebc75b3d1962675d02545e921a57ea96578118e126c431981023b1438f.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1fe018b2a750dfc7a6f92cea519a8d56a46cb72c34d0cf5266512c3ffe46c783.json/path",
+          "replacement": "procurement_w_1fe018b2a750dfc7a6f92cea519a8d56a46cb72c34d0cf5266512c3ffe46c783.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_86a3b8b78a7bce83435ceecc9aa90b39a5c249553a5b10ce89f83c80fd8f0898.json/path",
+          "replacement": "procurement_w_86a3b8b78a7bce83435ceecc9aa90b39a5c249553a5b10ce89f83c80fd8f0898.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_b2232e32a4190b28d64ebfd05a4d8cbc2ec24b144119a3a32aaff254c4b8d420.json/path",
+          "replacement": "procurement_w_b2232e32a4190b28d64ebfd05a4d8cbc2ec24b144119a3a32aaff254c4b8d420.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_b91d4e8a9ea16d31c4638e53b0007efc131c9abdaca7cbcd7517654da84901ea.json/path",
+          "replacement": "procurement_w_b91d4e8a9ea16d31c4638e53b0007efc131c9abdaca7cbcd7517654da84901ea.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_6cf727f4f38b467127ba8f7920f8783d60030835c7b08e7b653f002734dcf0e6.json/path",
+          "replacement": "procurement_w_6cf727f4f38b467127ba8f7920f8783d60030835c7b08e7b653f002734dcf0e6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_379266567c9354c792409d7821b951fb0b35b2dacc9616fb75f1cd1f50e9f197.json/path",
+          "replacement": "procurement_w_379266567c9354c792409d7821b951fb0b35b2dacc9616fb75f1cd1f50e9f197.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_554dff61edf3a05f066e3d892def28046bf50e0f73b8b8f40610198ef6e2481c.json/path",
+          "replacement": "procurement_w_554dff61edf3a05f066e3d892def28046bf50e0f73b8b8f40610198ef6e2481c.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_413c334789c0c1ce0f52ecdf4fd4a438910fb76f4405b56c13960d2f4965bd7a.json/path",
+          "replacement": "procurement_w_413c334789c0c1ce0f52ecdf4fd4a438910fb76f4405b56c13960d2f4965bd7a.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_047e063ea647417f758a54cb50b646ff746f5dac34fe3bff1a09e82a26d8c742.json/path",
+          "replacement": "procurement_w_047e063ea647417f758a54cb50b646ff746f5dac34fe3bff1a09e82a26d8c742.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_00ec92dbd5a97549365f6d7c17548bce72419ff8d53a33376cacd05fd073d3ab.json/path",
+          "replacement": "procurement_w_00ec92dbd5a97549365f6d7c17548bce72419ff8d53a33376cacd05fd073d3ab.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_440f2f460159e0cc1ca1c202b107e9ae37e9ea7172b07b45ec05169a5feb6ad1.json/path",
+          "replacement": "procurement_w_440f2f460159e0cc1ca1c202b107e9ae37e9ea7172b07b45ec05169a5feb6ad1.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_8652c447b0219944d34a4e592e075633952d536b2db7fa4a601411f7b3dcf652.json/path",
+          "replacement": "procurement_w_8652c447b0219944d34a4e592e075633952d536b2db7fa4a601411f7b3dcf652.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_466e21ddec2c2af90ff405ddc3fd6cb2122d0121daf75ef33ca245d15acf02e6.json/path",
+          "replacement": "procurement_w_466e21ddec2c2af90ff405ddc3fd6cb2122d0121daf75ef33ca245d15acf02e6.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f3f84d37cfd16c58be56c4c1e86d034447ad2ec3e93604f180fc5ed5a4e55740.json/path",
+          "replacement": "procurement_w_f3f84d37cfd16c58be56c4c1e86d034447ad2ec3e93604f180fc5ed5a4e55740.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_f9ba822f72e7b9eae449563659861c5d99b879ca9cc536bc1b7249b6a53ac7c4.json/path",
+          "replacement": "procurement_w_f9ba822f72e7b9eae449563659861c5d99b879ca9cc536bc1b7249b6a53ac7c4.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_785e72c79dff618246bddd9642846059133585a7433ddc9cfbf4e786617eb267.json/path",
+          "replacement": "procurement_w_785e72c79dff618246bddd9642846059133585a7433ddc9cfbf4e786617eb267.json"
+        },
+        {
+          "json_path": "/provenance/results/source_bridge_procurement_confirmation_w_1dcf2551da8934c34cf207e8e93b82869dff68432a4ba90f84740f17495e6388.json/path",
+          "replacement": "procurement_w_1dcf2551da8934c34cf207e8e93b82869dff68432a4ba90f84740f17495e6388.json"
+        },
+        {
+          "json_path": "/provenance/results/spptd_msra_benchmark_summary.json/path",
+          "replacement": "spptd_msra_benchmark_summary.json"
+        }
+      ],
+      "numeric_values_unchanged": true
+    },
+    {
+      "file": "code/experiments/support_size_summary.json",
+      "original_sha256": "0c7e16e946a73afbe038876facce5fe21b8bef7b6a3c7f0a44376fb7388ce749",
+      "public_sha256": "189983beceebd203520d292fbe3947a5c012a436cdecd856dc6866072ed5ba78",
+      "changed_fields": [
+        {
+          "json_path": "/public_plans_provenance",
+          "replacement": "public_inference_plans.json"
+        }
+      ],
+      "numeric_values_unchanged": true
+    },
+    {
+      "file": "code/experiments/data/public_inference_plans.json",
+      "original_sha256": "6ec463e21d3837be668d11a765908bf09cdf42f92e8e01487f4c13ba7e0a6e16",
+      "public_sha256": "db875282fab89367b1a9ce872d689e00814ffeb148d4b6120ce70f129b1779cc",
+      "changed_fields": [
+        {
+          "json_path": "/numeric_loads/0",
+          "replacement": "source_bridge_public_repaired_confirmation_public_inputs.npz"
+        }
+      ],
+      "numeric_values_unchanged": true
+    },
+    {
+      "file": "code/diagrams/quality/mechanism_figure_manifest.json",
+      "original_sha256": "fbc0a937f2b81b3cf27d5c050406c8a268fa28295c5a3937a088ca42b6518771",
+      "public_sha256": "43dbe80d6a78c2f188c09f39ee3f02dd4235223d25559a5709811ee06d5d33d3",
+      "changed_fields": [
+        {
+          "json_path": "/0/exports/svg/path",
+          "replacement": "code/diagrams/figures/acquisition.svg"
+        },
+        {
+          "json_path": "/0/exports/pdf/path",
+          "replacement": "code/diagrams/figures/acquisition.pdf"
+        },
+        {
+          "json_path": "/0/exports/png/path",
+          "replacement": "code/diagrams/figures/acquisition.png"
+        },
+        {
+          "json_path": "/1/exports/svg/path",
+          "replacement": "code/diagrams/figures/geometry.svg"
+        },
+        {
+          "json_path": "/1/exports/pdf/path",
+          "replacement": "code/diagrams/figures/geometry.pdf"
+        },
+        {
+          "json_path": "/1/exports/png/path",
+          "replacement": "code/diagrams/figures/geometry.png"
+        }
+      ],
+      "numeric_values_unchanged": true
+    }
+  ]
+}

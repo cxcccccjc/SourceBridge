@@ -1,0 +1,1446 @@
+{
+  "status": "PASS",
+  "units": "micrograms per cubic meter",
+  "targets_per_profile": 213,
+  "main_library_conditions": 14,
+  "pooled_cells_per_interface_profile": 2982,
+  "definitions": {
+    "clean_rmse": "Square root of mean clean squared error over 213 targets.",
+    "pooled_rmse": "sqrt(sum_i sum_a e_i,a^2 / (N*|A|)); N=213 and |A|=14. Each of the 2982 target-condition cells has equal weight.",
+    "targetwise_worst_rmse": "R_A=sqrt(mean_i d_i^2), where d_i=max_{a in A}|e_i,a|.",
+    "clean_mae": "Mean clean absolute error over 213 targets.",
+    "mean_targetwise_worst_absolute_error": "M_A=mean_i d_i over all 213 targets.",
+    "q95_targetwise_worst_absolute_error": "Type-7 linear sample 95th percentile of d_i; for N=213 this is 0.6*d_(202)+0.4*d_(203), sorted ascending.",
+    "observed_max_absolute_error": "max_i d_i=max_{i,a in A}|e_i,a|, the observed maximum on the declared finite library.",
+    "upper_ten_percent_mean": "Mean of the largest ceil(0.10*213)=22 values d_i. This covers 10.3286% of targets and is not a fractional exact-10% CVaR.",
+    "clean_max_absolute_error": "Largest absolute clean error over 213 targets."
+  },
+  "values": [
+    {
+      "interface": "SourceBridge",
+      "source_label": "SourceBridge_proper_MLNI_WLS",
+      "profile": "exact",
+      "clean_rmse": 1.9142550278066337,
+      "pooled_rmse": 2.2242741760665505,
+      "targetwise_worst_rmse": 3.6859356984878944,
+      "clean_mae": 1.3542362305454512,
+      "mean_targetwise_worst_absolute_error": 3.316889404161249,
+      "q95_targetwise_worst_absolute_error": 6.337381487563549,
+      "observed_max_absolute_error": 11.497104887792318,
+      "upper_ten_percent_mean": 6.8895072730120495,
+      "clean_max_absolute_error": 8.625926284933996
+    },
+    {
+      "interface": "SourceBridge",
+      "source_label": "SourceBridge_proper_MLNI_WLS",
+      "profile": "heterogeneous",
+      "clean_rmse": 3.0020597776014863,
+      "pooled_rmse": 3.15805255867648,
+      "targetwise_worst_rmse": 4.859969656942147,
+      "clean_mae": 2.1299313922458887,
+      "mean_targetwise_worst_absolute_error": 4.236498338977088,
+      "q95_targetwise_worst_absolute_error": 8.671938308370342,
+      "observed_max_absolute_error": 16.434712945968442,
+      "upper_ten_percent_mean": 9.867818336637015,
+      "clean_max_absolute_error": 13.29278156467322
+    },
+    {
+      "interface": "CRH + WLS",
+      "source_label": "CRH_TKDE2016__weighted_source_affine",
+      "profile": "exact",
+      "clean_rmse": 2.1986591014460033,
+      "pooled_rmse": 2.761542783834177,
+      "targetwise_worst_rmse": 4.668667911456457,
+      "clean_mae": 1.6077371083482976,
+      "mean_targetwise_worst_absolute_error": 4.202507697776145,
+      "q95_targetwise_worst_absolute_error": 7.886736635484523,
+      "observed_max_absolute_error": 11.344510714921945,
+      "upper_ten_percent_mean": 8.379282404168698,
+      "clean_max_absolute_error": 8.585819579664033
+    },
+    {
+      "interface": "CRH + WLS",
+      "source_label": "CRH_TKDE2016__weighted_source_affine",
+      "profile": "heterogeneous",
+      "clean_rmse": 3.0810042982024233,
+      "pooled_rmse": 3.6395242378286454,
+      "targetwise_worst_rmse": 6.078469211114845,
+      "clean_mae": 2.2772556131713344,
+      "mean_targetwise_worst_absolute_error": 5.126064837742264,
+      "q95_targetwise_worst_absolute_error": 10.799951847810505,
+      "observed_max_absolute_error": 23.703490296983446,
+      "upper_ten_percent_mean": 12.334520250619933,
+      "clean_max_absolute_error": 12.96217488182534
+    },
+    {
+      "interface": "EPTD + WLS",
+      "source_label": "EPTD_TIFS2022__weighted_source_affine",
+      "profile": "exact",
+      "clean_rmse": 2.1299622539837775,
+      "pooled_rmse": 5.300928898425731,
+      "targetwise_worst_rmse": 13.173087038227008,
+      "clean_mae": 1.5180721281578058,
+      "mean_targetwise_worst_absolute_error": 12.88306167582389,
+      "q95_targetwise_worst_absolute_error": 17.053398253984373,
+      "observed_max_absolute_error": 19.06557759043082,
+      "upper_ten_percent_mean": 17.212114188366915,
+      "clean_max_absolute_error": 8.95958664796947
+    },
+    {
+      "interface": "EPTD + WLS",
+      "source_label": "EPTD_TIFS2022__weighted_source_affine",
+      "profile": "heterogeneous",
+      "clean_rmse": 3.155324067229102,
+      "pooled_rmse": 5.684079539517929,
+      "targetwise_worst_rmse": 13.73965980613593,
+      "clean_mae": 2.290344332876304,
+      "mean_targetwise_worst_absolute_error": 13.473704490633883,
+      "q95_targetwise_worst_absolute_error": 17.48754849235372,
+      "observed_max_absolute_error": 24.365151128297583,
+      "upper_ten_percent_mean": 18.11469601387506,
+      "clean_max_absolute_error": 12.642683736988616
+    },
+    {
+      "interface": "FETD-D + WLS",
+      "source_label": "FETD_D_AAAI2023__weighted_source_affine",
+      "profile": "exact",
+      "clean_rmse": 2.091747782361565,
+      "pooled_rmse": 2.4749395452190877,
+      "targetwise_worst_rmse": 4.901301854074958,
+      "clean_mae": 1.4910058743478656,
+      "mean_targetwise_worst_absolute_error": 4.451605394689551,
+      "q95_targetwise_worst_absolute_error": 8.127715102814387,
+      "observed_max_absolute_error": 12.016489856019518,
+      "upper_ten_percent_mean": 8.378436988785621,
+      "clean_max_absolute_error": 8.566290119809718
+    },
+    {
+      "interface": "FETD-D + WLS",
+      "source_label": "FETD_D_AAAI2023__weighted_source_affine",
+      "profile": "heterogeneous",
+      "clean_rmse": 3.1489095793282313,
+      "pooled_rmse": 3.180266349873893,
+      "targetwise_worst_rmse": 5.3914080467097225,
+      "clean_mae": 2.277444756746274,
+      "mean_targetwise_worst_absolute_error": 4.737793075230556,
+      "q95_targetwise_worst_absolute_error": 9.441182009925836,
+      "observed_max_absolute_error": 16.13688233819738,
+      "upper_ten_percent_mean": 10.339213777430087,
+      "clean_max_absolute_error": 13.807647836446435
+    },
+    {
+      "interface": "FETD-AK + WLS",
+      "source_label": "FETD_AK_AAAI2023__weighted_source_affine",
+      "profile": "exact",
+      "clean_rmse": 2.0293734444014544,
+      "pooled_rmse": 4.798556447659601,
+      "targetwise_worst_rmse": 8.839060292275796,
+      "clean_mae": 1.532360420013093,
+      "mean_targetwise_worst_absolute_error": 8.573536341490154,
+      "q95_targetwise_worst_absolute_error": 12.790623031903785,
+      "observed_max_absolute_error": 15.94405292345084,
+      "upper_ten_percent_mean": 12.923003758253861,
+      "clean_max_absolute_error": 7.070479412420074
+    },
+    {
+      "interface": "FETD-AK + WLS",
+      "source_label": "FETD_AK_AAAI2023__weighted_source_affine",
+      "profile": "heterogeneous",
+      "clean_rmse": 2.6689765185766032,
+      "pooled_rmse": 5.706455141645539,
+      "targetwise_worst_rmse": 10.225775998418424,
+      "clean_mae": 2.0153543435327212,
+      "mean_targetwise_worst_absolute_error": 9.622372526435074,
+      "q95_targetwise_worst_absolute_error": 16.092926049901806,
+      "observed_max_absolute_error": 36.70089128242516,
+      "upper_ten_percent_mean": 17.343649238816678,
+      "clean_max_absolute_error": 10.191047266970017
+    },
+    {
+      "interface": "WLS median",
+      "source_label": "weighted_source_affine_median",
+      "profile": "exact",
+      "clean_rmse": 2.234622100472174,
+      "pooled_rmse": 2.7507706004279444,
+      "targetwise_worst_rmse": 3.7190946118175816,
+      "clean_mae": 1.5938227767780717,
+      "mean_targetwise_worst_absolute_error": 3.241661144018119,
+      "q95_targetwise_worst_absolute_error": 6.402842084613944,
+      "observed_max_absolute_error": 11.297929338000301,
+      "upper_ten_percent_mean": 7.017959841095691,
+      "clean_max_absolute_error": 9.576164826262442
+    },
+    {
+      "interface": "WLS median",
+      "source_label": "weighted_source_affine_median",
+      "profile": "heterogeneous",
+      "clean_rmse": 3.147827539894216,
+      "pooled_rmse": 3.5605817447185366,
+      "targetwise_worst_rmse": 4.834526166074596,
+      "clean_mae": 2.3275608878582905,
+      "mean_targetwise_worst_absolute_error": 4.000823212660524,
+      "q95_targetwise_worst_absolute_error": 8.854290442705986,
+      "observed_max_absolute_error": 19.04622527859948,
+      "upper_ten_percent_mean": 10.149416711010272,
+      "clean_max_absolute_error": 12.96217488182534
+    },
+    {
+      "interface": "Midpoint",
+      "source_label": "SourceBridge_packet",
+      "profile": "exact",
+      "clean_rmse": 3.9610521976005053,
+      "pooled_rmse": 3.953090444427301,
+      "targetwise_worst_rmse": 5.826088661488745,
+      "clean_mae": 2.978589141151958,
+      "mean_targetwise_worst_absolute_error": 5.037841016724039,
+      "q95_targetwise_worst_absolute_error": 10.375995119799065,
+      "observed_max_absolute_error": 17.014311296519466,
+      "upper_ten_percent_mean": 11.241032225601664,
+      "clean_max_absolute_error": 14.639162921074476
+    },
+    {
+      "interface": "Midpoint",
+      "source_label": "SourceBridge_packet",
+      "profile": "heterogeneous",
+      "clean_rmse": 4.371904099200629,
+      "pooled_rmse": 4.420644695533859,
+      "targetwise_worst_rmse": 6.484234307386432,
+      "clean_mae": 3.5044902546690775,
+      "mean_targetwise_worst_absolute_error": 5.915890825531224,
+      "q95_targetwise_worst_absolute_error": 10.573588106769755,
+      "observed_max_absolute_error": 18.47765077241536,
+      "upper_ten_percent_mean": 11.15623590042207,
+      "clean_max_absolute_error": 12.615607438989244
+    },
+    {
+      "interface": "CRH, native",
+      "source_label": "CRH_TKDE2016__native",
+      "profile": "exact",
+      "clean_rmse": 8.741199873021351,
+      "pooled_rmse": 9.434658435191592,
+      "targetwise_worst_rmse": 13.539127323386566,
+      "clean_mae": 6.866614399019437,
+      "mean_targetwise_worst_absolute_error": 11.263952628397643,
+      "q95_targetwise_worst_absolute_error": 23.840232767700236,
+      "observed_max_absolute_error": 49.05151148591165,
+      "upper_ten_percent_mean": 27.627059091433697,
+      "clean_max_absolute_error": 29.646789643713603
+    },
+    {
+      "interface": "CRH, native",
+      "source_label": "CRH_TKDE2016__native",
+      "profile": "heterogeneous",
+      "clean_rmse": 8.692862097785694,
+      "pooled_rmse": 9.32592328468609,
+      "targetwise_worst_rmse": 13.82689534654461,
+      "clean_mae": 6.839449371305179,
+      "mean_targetwise_worst_absolute_error": 11.384675314620994,
+      "q95_targetwise_worst_absolute_error": 25.06643261656513,
+      "observed_max_absolute_error": 49.05151148591165,
+      "upper_ten_percent_mean": 29.12060001656821,
+      "clean_max_absolute_error": 29.646789643713603
+    },
+    {
+      "interface": "EPTD, native",
+      "source_label": "EPTD_TIFS2022__native",
+      "profile": "exact",
+      "clean_rmse": 7.994351073883365,
+      "pooled_rmse": 8.192462830707507,
+      "targetwise_worst_rmse": 13.677710243351717,
+      "clean_mae": 6.126566182678513,
+      "mean_targetwise_worst_absolute_error": 12.23023688829545,
+      "q95_targetwise_worst_absolute_error": 22.263993524468844,
+      "observed_max_absolute_error": 52.80430293350446,
+      "upper_ten_percent_mean": 25.56569893709278,
+      "clean_max_absolute_error": 32.10371900739361
+    },
+    {
+      "interface": "EPTD, native",
+      "source_label": "EPTD_TIFS2022__native",
+      "profile": "heterogeneous",
+      "clean_rmse": 7.9783870695002514,
+      "pooled_rmse": 8.12874006263071,
+      "targetwise_worst_rmse": 13.388711808408276,
+      "clean_mae": 6.122124691417473,
+      "mean_targetwise_worst_absolute_error": 11.969091298342473,
+      "q95_targetwise_worst_absolute_error": 22.18496498034592,
+      "observed_max_absolute_error": 51.44266140382854,
+      "upper_ten_percent_mean": 25.025148310721132,
+      "clean_max_absolute_error": 31.902602630024603
+    },
+    {
+      "interface": "FETD-AK, native",
+      "source_label": "FETD_AK_AAAI2023__native",
+      "profile": "exact",
+      "clean_rmse": 7.058355217791853,
+      "pooled_rmse": 11.74342970569512,
+      "targetwise_worst_rmse": 23.66496023344848,
+      "clean_mae": 5.493351505102114,
+      "mean_targetwise_worst_absolute_error": 20.877839165302888,
+      "q95_targetwise_worst_absolute_error": 45.710611258236455,
+      "observed_max_absolute_error": 69.0477155512371,
+      "upper_ten_percent_mean": 46.82703407223101,
+      "clean_max_absolute_error": 30.23333806480281
+    },
+    {
+      "interface": "FETD-AK, native",
+      "source_label": "FETD_AK_AAAI2023__native",
+      "profile": "heterogeneous",
+      "clean_rmse": 7.076061859948656,
+      "pooled_rmse": 11.042476096369528,
+      "targetwise_worst_rmse": 21.751562956070412,
+      "clean_mae": 5.415562501822976,
+      "mean_targetwise_worst_absolute_error": 19.531529024865197,
+      "q95_targetwise_worst_absolute_error": 40.15217377886813,
+      "observed_max_absolute_error": 58.683408190560186,
+      "upper_ten_percent_mean": 41.887227067480204,
+      "clean_max_absolute_error": 30.233338065127754
+    },
+    {
+      "interface": "FETD-D, native",
+      "source_label": "FETD_D_AAAI2023__native",
+      "profile": "exact",
+      "clean_rmse": 7.993262660398932,
+      "pooled_rmse": 8.110475713833006,
+      "targetwise_worst_rmse": 13.813843241492215,
+      "clean_mae": 6.059053321498021,
+      "mean_targetwise_worst_absolute_error": 12.133044781373584,
+      "q95_targetwise_worst_absolute_error": 24.76589424998601,
+      "observed_max_absolute_error": 56.537059903457674,
+      "upper_ten_percent_mean": 26.945162443609124,
+      "clean_max_absolute_error": 35.798219539007164
+    },
+    {
+      "interface": "FETD-D, native",
+      "source_label": "FETD_D_AAAI2023__native",
+      "profile": "heterogeneous",
+      "clean_rmse": 8.002678838098525,
+      "pooled_rmse": 8.055020577321248,
+      "targetwise_worst_rmse": 13.499065958100326,
+      "clean_mae": 6.0719499767155884,
+      "mean_targetwise_worst_absolute_error": 11.934674217118458,
+      "q95_targetwise_worst_absolute_error": 23.767750320105584,
+      "observed_max_absolute_error": 55.60919467971718,
+      "upper_ten_percent_mean": 25.76791670845084,
+      "clean_max_absolute_error": 35.701278301277114
+    }
+  ],
+  "rankings": [
+    {
+      "profile": "exact",
+      "metric": "clean_rmse",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 1.9142550278066337,
+          "rank": 1
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 2.0293734444014544,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 2.091747782361565,
+          "rank": 3
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 2.1299622539837775,
+          "rank": 4
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 2.1986591014460033,
+          "rank": 5
+        },
+        {
+          "interface": "WLS median",
+          "value": 2.234622100472174,
+          "rank": 6
+        },
+        {
+          "interface": "Midpoint",
+          "value": 3.9610521976005053,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 7.058355217791853,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 7.993262660398932,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 7.994351073883365,
+          "rank": 10
+        },
+        {
+          "interface": "CRH, native",
+          "value": 8.741199873021351,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "pooled_rmse",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 2.2242741760665505,
+          "rank": 1
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 2.4749395452190877,
+          "rank": 2
+        },
+        {
+          "interface": "WLS median",
+          "value": 2.7507706004279444,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 2.761542783834177,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 3.953090444427301,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 4.798556447659601,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 5.300928898425731,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 8.110475713833006,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 8.192462830707507,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 9.434658435191592,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 11.74342970569512,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "targetwise_worst_rmse",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 3.6859356984878944,
+          "rank": 1
+        },
+        {
+          "interface": "WLS median",
+          "value": 3.7190946118175816,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 4.668667911456457,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 4.901301854074958,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 5.826088661488745,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 8.839060292275796,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 13.173087038227008,
+          "rank": 7
+        },
+        {
+          "interface": "CRH, native",
+          "value": 13.539127323386566,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 13.677710243351717,
+          "rank": 9
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 13.813843241492215,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 23.66496023344848,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "clean_mae",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 1.3542362305454512,
+          "rank": 1
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 1.4910058743478656,
+          "rank": 2
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 1.5180721281578058,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 1.532360420013093,
+          "rank": 4
+        },
+        {
+          "interface": "WLS median",
+          "value": 1.5938227767780717,
+          "rank": 5
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 1.6077371083482976,
+          "rank": 6
+        },
+        {
+          "interface": "Midpoint",
+          "value": 2.978589141151958,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 5.493351505102114,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 6.059053321498021,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 6.126566182678513,
+          "rank": 10
+        },
+        {
+          "interface": "CRH, native",
+          "value": 6.866614399019437,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "mean_targetwise_worst_absolute_error",
+      "ranking": [
+        {
+          "interface": "WLS median",
+          "value": 3.241661144018119,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 3.316889404161249,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 4.202507697776145,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 4.451605394689551,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 5.037841016724039,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 8.573536341490154,
+          "rank": 6
+        },
+        {
+          "interface": "CRH, native",
+          "value": 11.263952628397643,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 12.133044781373584,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 12.23023688829545,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 12.88306167582389,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 20.877839165302888,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "q95_targetwise_worst_absolute_error",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 6.337381487563549,
+          "rank": 1
+        },
+        {
+          "interface": "WLS median",
+          "value": 6.402842084613944,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 7.886736635484523,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 8.127715102814387,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 10.375995119799065,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 12.790623031903785,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 17.053398253984373,
+          "rank": 7
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 22.263993524468844,
+          "rank": 8
+        },
+        {
+          "interface": "CRH, native",
+          "value": 23.840232767700236,
+          "rank": 9
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 24.76589424998601,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 45.710611258236455,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "observed_max_absolute_error",
+      "ranking": [
+        {
+          "interface": "WLS median",
+          "value": 11.297929338000301,
+          "rank": 1
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 11.344510714921945,
+          "rank": 2
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 11.497104887792318,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 12.016489856019518,
+          "rank": 4
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 15.94405292345084,
+          "rank": 5
+        },
+        {
+          "interface": "Midpoint",
+          "value": 17.014311296519466,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 19.06557759043082,
+          "rank": 7
+        },
+        {
+          "interface": "CRH, native",
+          "value": 49.05151148591165,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 52.80430293350446,
+          "rank": 9
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 56.537059903457674,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 69.0477155512371,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "upper_ten_percent_mean",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 6.8895072730120495,
+          "rank": 1
+        },
+        {
+          "interface": "WLS median",
+          "value": 7.017959841095691,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 8.378436988785621,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 8.379282404168698,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 11.241032225601664,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 12.923003758253861,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 17.212114188366915,
+          "rank": 7
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 25.56569893709278,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 26.945162443609124,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 27.627059091433697,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 46.82703407223101,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "exact",
+      "metric": "clean_max_absolute_error",
+      "ranking": [
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 7.070479412420074,
+          "rank": 1
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 8.566290119809718,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 8.585819579664033,
+          "rank": 3
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 8.625926284933996,
+          "rank": 4
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 8.95958664796947,
+          "rank": 5
+        },
+        {
+          "interface": "WLS median",
+          "value": 9.576164826262442,
+          "rank": 6
+        },
+        {
+          "interface": "Midpoint",
+          "value": 14.639162921074476,
+          "rank": 7
+        },
+        {
+          "interface": "CRH, native",
+          "value": 29.646789643713603,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 30.23333806480281,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 32.10371900739361,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 35.798219539007164,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "clean_rmse",
+      "ranking": [
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 2.6689765185766032,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 3.0020597776014863,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 3.0810042982024233,
+          "rank": 3
+        },
+        {
+          "interface": "WLS median",
+          "value": 3.147827539894216,
+          "rank": 4
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 3.1489095793282313,
+          "rank": 5
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 3.155324067229102,
+          "rank": 6
+        },
+        {
+          "interface": "Midpoint",
+          "value": 4.371904099200629,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 7.076061859948656,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 7.9783870695002514,
+          "rank": 9
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 8.002678838098525,
+          "rank": 10
+        },
+        {
+          "interface": "CRH, native",
+          "value": 8.692862097785694,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "pooled_rmse",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 3.15805255867648,
+          "rank": 1
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 3.180266349873893,
+          "rank": 2
+        },
+        {
+          "interface": "WLS median",
+          "value": 3.5605817447185366,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 3.6395242378286454,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 4.420644695533859,
+          "rank": 5
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 5.684079539517929,
+          "rank": 6
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 5.706455141645539,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 8.055020577321248,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 8.12874006263071,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 9.32592328468609,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 11.042476096369528,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "targetwise_worst_rmse",
+      "ranking": [
+        {
+          "interface": "WLS median",
+          "value": 4.834526166074596,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 4.859969656942147,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 5.3914080467097225,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 6.078469211114845,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 6.484234307386432,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 10.225775998418424,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 13.388711808408276,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 13.499065958100326,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 13.73965980613593,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 13.82689534654461,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 21.751562956070412,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "clean_mae",
+      "ranking": [
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 2.0153543435327212,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 2.1299313922458887,
+          "rank": 2
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 2.2772556131713344,
+          "rank": 3
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 2.277444756746274,
+          "rank": 4
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 2.290344332876304,
+          "rank": 5
+        },
+        {
+          "interface": "WLS median",
+          "value": 2.3275608878582905,
+          "rank": 6
+        },
+        {
+          "interface": "Midpoint",
+          "value": 3.5044902546690775,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 5.415562501822976,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 6.0719499767155884,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 6.122124691417473,
+          "rank": 10
+        },
+        {
+          "interface": "CRH, native",
+          "value": 6.839449371305179,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "mean_targetwise_worst_absolute_error",
+      "ranking": [
+        {
+          "interface": "WLS median",
+          "value": 4.000823212660524,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 4.236498338977088,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 4.737793075230556,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 5.126064837742264,
+          "rank": 4
+        },
+        {
+          "interface": "Midpoint",
+          "value": 5.915890825531224,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 9.622372526435074,
+          "rank": 6
+        },
+        {
+          "interface": "CRH, native",
+          "value": 11.384675314620994,
+          "rank": 7
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 11.934674217118458,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 11.969091298342473,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 13.473704490633883,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 19.531529024865197,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "q95_targetwise_worst_absolute_error",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 8.671938308370342,
+          "rank": 1
+        },
+        {
+          "interface": "WLS median",
+          "value": 8.854290442705986,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 9.441182009925836,
+          "rank": 3
+        },
+        {
+          "interface": "Midpoint",
+          "value": 10.573588106769755,
+          "rank": 4
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 10.799951847810505,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 16.092926049901806,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 17.48754849235372,
+          "rank": 7
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 22.18496498034592,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 23.767750320105584,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 25.06643261656513,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 40.15217377886813,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "observed_max_absolute_error",
+      "ranking": [
+        {
+          "interface": "FETD-D + WLS",
+          "value": 16.13688233819738,
+          "rank": 1
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 16.434712945968442,
+          "rank": 2
+        },
+        {
+          "interface": "Midpoint",
+          "value": 18.47765077241536,
+          "rank": 3
+        },
+        {
+          "interface": "WLS median",
+          "value": 19.04622527859948,
+          "rank": 4
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 23.703490296983446,
+          "rank": 5
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 24.365151128297583,
+          "rank": 6
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 36.70089128242516,
+          "rank": 7
+        },
+        {
+          "interface": "CRH, native",
+          "value": 49.05151148591165,
+          "rank": 8
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 51.44266140382854,
+          "rank": 9
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 55.60919467971718,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 58.683408190560186,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "upper_ten_percent_mean",
+      "ranking": [
+        {
+          "interface": "SourceBridge",
+          "value": 9.867818336637015,
+          "rank": 1
+        },
+        {
+          "interface": "WLS median",
+          "value": 10.149416711010272,
+          "rank": 2
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 10.339213777430087,
+          "rank": 3
+        },
+        {
+          "interface": "Midpoint",
+          "value": 11.15623590042207,
+          "rank": 4
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 12.334520250619933,
+          "rank": 5
+        },
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 17.343649238816678,
+          "rank": 6
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 18.11469601387506,
+          "rank": 7
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 25.025148310721132,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 25.76791670845084,
+          "rank": 9
+        },
+        {
+          "interface": "CRH, native",
+          "value": 29.12060001656821,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 41.887227067480204,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "profile": "heterogeneous",
+      "metric": "clean_max_absolute_error",
+      "ranking": [
+        {
+          "interface": "FETD-AK + WLS",
+          "value": 10.191047266970017,
+          "rank": 1
+        },
+        {
+          "interface": "Midpoint",
+          "value": 12.615607438989244,
+          "rank": 2
+        },
+        {
+          "interface": "EPTD + WLS",
+          "value": 12.642683736988616,
+          "rank": 3
+        },
+        {
+          "interface": "CRH + WLS",
+          "value": 12.96217488182534,
+          "rank": 4
+        },
+        {
+          "interface": "WLS median",
+          "value": 12.96217488182534,
+          "rank": 4
+        },
+        {
+          "interface": "SourceBridge",
+          "value": 13.29278156467322,
+          "rank": 6
+        },
+        {
+          "interface": "FETD-D + WLS",
+          "value": 13.807647836446435,
+          "rank": 7
+        },
+        {
+          "interface": "CRH, native",
+          "value": 29.646789643713603,
+          "rank": 8
+        },
+        {
+          "interface": "FETD-AK, native",
+          "value": 30.233338065127754,
+          "rank": 9
+        },
+        {
+          "interface": "EPTD, native",
+          "value": 31.902602630024603,
+          "rank": 10
+        },
+        {
+          "interface": "FETD-D, native",
+          "value": 35.701278301277114,
+          "rank": 11
+        }
+      ]
+    }
+  ],
+  "ranking_policy": "Lower is better; all 11 displayed interfaces; competition ranking on unrounded values, equality tolerance 1e-12.",
+  "source_provenance": "data/error_metric_provenance.json",
+  "raw_prediction_verification": {
+    "status": "PASS",
+    "prediction_rows": 102240,
+    "complete_bundles": 6390,
+    "proper_mlni_equal_predictions": 6816,
+    "max_prediction_difference": 0.0
+  },
+  "proper_mlni_equivalence": {
+    "sourcebridge_label": "SourceBridge_proper_MLNI_WLS",
+    "comparator_label": "MLNI_JSAC2022__proper_public_WLS",
+    "compared_prediction_cells": 6816,
+    "exactly_equal_cells": 6816,
+    "max_absolute_prediction_difference": 0.0,
+    "scope": "All 213 targets, both profiles and all 16 recorded conditions. Confirmed from original prediction cells during input extraction; the optional CSV check repeats this comparison."
+  },
+  "interpretation": "Frozen-prediction descriptive summaries. The pooled metric weights the 14 declared conditions equally, not by a real-world attack probability. Observed maxima are not uniform certificates. No significance test is implied. All prediction-error metrics coincide with proper MLNI on this record."
+}

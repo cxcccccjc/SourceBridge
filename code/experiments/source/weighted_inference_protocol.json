@@ -1,0 +1,71 @@
+{
+  "status": "FROZEN_BEFORE_WEIGHTED_CONTROL_EXECUTION",
+  "scope": "Post-main development adapter control only; no new data/purchase or baseline paper",
+  "original_protocol_sha256": "798f8780fcdea6fb72891a8ccffc4e70d93678042f00be3de7b56f93905733c5",
+  "purchased_hash": "ee0b59cbddc21459cdb95cc7b5d1d25e892b40fa32e916e96b1a98187f045a9b",
+  "original_runs_hash": "6c5b8c718b00fd0f851aece7ddff55e4a0a829b4fbc95013dd87beb417ded5b7",
+  "method_names": [
+    "CRH_TKDE2016",
+    "EPTD_TIFS2022",
+    "FETD_AK_AAAI2023",
+    "FETD_D_AAAI2023",
+    "MLNI_JSAC2022"
+  ],
+  "grid": [
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 100.0
+    }
+  ],
+  "cap": 20000,
+  "weights": "3/(epsilon_j**2+h_j**2), normalized to sum K; declared nominal gain1 proxy",
+  "mlni": "Same reference normalizer and prior construction as original; only the common affine front end changes; train-fold h only",
+  "K1": {
+    "prior_strength": 2.0,
+    "truth_prior": 10.0
+  },
+  "prediction_repeats": 3,
+  "warmup": 1,
+  "primary": "All core outputs projected to the same public T=[0,500]",
+  "source_hashes": {
+    "source_bridge_weighted_adapter_control.py": "87b82fe9b2670649a87f54f9e8e642d8241ea3ca0a56719214760277b1286bda",
+    "source_bridge_weighted_adapter_control_protocol.md": "526e27622bcb3be8cfb15d79f72930c5e8d45c7a4f5d761cd1c77c6d59b35507",
+    "source_bridge_acquisition_benchmark.py": "c9312164da4bc5db5ad62b735ba5bc5e8578540f8979ea489b5d0590303dd99a",
+    "audit_triangles_calibration.py": "863d39e54678122e3a9356f8abda12284f7cf901e33bb7abbd543c3736f736fc",
+    "spptd_msra_benchmark.py": "6b89f2008d6906cfb3b93111a4f0ded4ae410064ee6eae324c823346e24f2358",
+    "literature_baseline_extra.py": "5353d2f9888434a9e7cbf59b636f1e57faad9a44ade2945e07dadcb50e2163e8",
+    "triangles_batch_cores.py": "555c6d041a51d8d4ceb9f832612682c79d053ff9be5de8670cb225cd02b1193c"
+  }
+}

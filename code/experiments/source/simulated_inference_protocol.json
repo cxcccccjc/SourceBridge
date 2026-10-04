@@ -1,0 +1,159 @@
+{
+  "status": "FROZEN_BEFORE_SPAN_DIAGNOSTIC_EXECUTION",
+  "scope": "Outcome-driven pure simulation, not independent confirmation or new public data",
+  "spans": [
+    20,
+    150,
+    450
+  ],
+  "anchor_positions": [
+    -0.5,
+    -0.3,
+    -0.1,
+    0.1,
+    0.3,
+    0.5
+  ],
+  "anchor_center": 250.0,
+  "target_values": [
+    40.0,
+    250.0,
+    460.0
+  ],
+  "seeds": [
+    419131,
+    419132
+  ],
+  "profiles": {
+    "exact": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "heterogeneous": [
+      2.0,
+      5.0,
+      10.0,
+      20.0,
+      40.0,
+      80.0
+    ]
+  },
+  "costs": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "budgets": [
+    4,
+    7
+  ],
+  "scenarios": [
+    "affine_honest",
+    "affine_two_source_attack"
+  ],
+  "policies": [
+    "MinimaxPairTable",
+    "MaxSpan",
+    "NominalCOptimal",
+    "FixedIdBudget"
+  ],
+  "spec": {
+    "target": [
+      0.0,
+      500.0
+    ],
+    "gain_bounds": [
+      0.7,
+      1.3
+    ],
+    "epsilon": 5.0,
+    "m": 9,
+    "f": 2
+  },
+  "methods": [
+    "CRH_TKDE2016",
+    "EPTD_TIFS2022",
+    "FETD_AK_AAAI2023",
+    "FETD_D_AAAI2023",
+    "MLNI_JSAC2022"
+  ],
+  "adapters": [
+    "native",
+    "weighted_source_affine"
+  ],
+  "median_control": true,
+  "precision_requirement": 20.0,
+  "projection_core": "EPTD_TIFS2022__weighted_source_affine",
+  "projection": "Exact hull and exact purchased W/2, separate component table",
+  "mlni_grid": [
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 100.0
+    }
+  ],
+  "mlni_cap": 20000,
+  "K1": {
+    "prior_strength": 2.0,
+    "truth_prior": 10.0
+  },
+  "timing": {
+    "warmup": 1,
+    "repetitions": 3,
+    "selection_repetitions": 1
+  },
+  "source_hashes": {
+    "source_bridge_span_diagnostic.py": "7c1d425e77983ffc384d85e4cf57f085113a54dddeb8af75759192bda662a7d4",
+    "source_bridge_span_diagnostic_protocol.md": "9dc0e0328174c5e299395697c7fe892c89539ec1ed33c0bb213beaa8ed9d2551",
+    "source_bridge_span_diagnostic_analyze.py": "ac13b4a420a612a3ec66352ec399b86eb1dc8457e52d4436dfdce04e48881605",
+    "source_bridge_acquisition_benchmark.py": "c9312164da4bc5db5ad62b735ba5bc5e8578540f8979ea489b5d0590303dd99a",
+    "source_bridge_weighted_adapter_control.py": "87b82fe9b2670649a87f54f9e8e642d8241ea3ca0a56719214760277b1286bda",
+    "source_bridge_prequery_exact.py": "bff5761f4047518a9ada6a2e3942e165195656352313a1d63f965987894c1fed",
+    "source_bridge_anchor_design.py": "0e1ccd010a30abf9d1cf27ea315c99596d35f13f70fc11b18fe6628fa6b9d847",
+    "source_bridge_certified_reference.py": "7fde2b1d6c0182e8af11baba1db71affad9ece377169445cdbfb1aba72f6f202",
+    "source_bridge_packet_inference.py": "c2ef07f6bf2923a705b645c52a02b7489b57fbd343e4d5a768f3c43ea35f2f1b",
+    "source_bridge_nominal_projection.py": "f4b21359107e1676368033f288d62c5749140cdae9408d198431f4e7f2993bd9",
+    "audit_triangles_calibration.py": "863d39e54678122e3a9356f8abda12284f7cf901e33bb7abbd543c3736f736fc",
+    "spptd_msra_benchmark.py": "6b89f2008d6906cfb3b93111a4f0ded4ae410064ee6eae324c823346e24f2358",
+    "literature_baseline_extra.py": "5353d2f9888434a9e7cbf59b636f1e57faad9a44ade2945e07dadcb50e2163e8",
+    "triangles_batch_cores.py": "555c6d041a51d8d4ceb9f832612682c79d053ff9be5de8670cb225cd02b1193c"
+  }
+}

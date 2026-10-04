@@ -1,0 +1,17 @@
+{
+  "created": "2026-09-30",
+  "status": "POST_HOC_REPRODUCTION_AND_STATISTICAL_SENSITIVITY",
+  "not_new_holdout": true,
+  "purpose": "Verify saved frozen SourceBridge results and quantify paired variability without changing methods, attacks, targets, budgets or thresholds.",
+  "public_comparisons": "SourceBridge proper MLNI minus every saved interface; primary presentation includes all four published papers, both FETD cores, equally enhanced proper MLNI and median/midpoint controls.",
+  "statistics": {
+    "replicates": 20000,
+    "seed": 2026093001,
+    "public_cluster": "Date: all stations, attacks and methods stay together. Circular moving-block bootstrap over all 28 dates with block lengths 1, 3, 7; 7-day is main sensitivity. Not a confirmatory test or familywise claim.",
+    "public_estimand": "Difference in aggregate RMSE from event-level clean squared errors or event-level maximum squared error over the frozen 14-element library.",
+    "procurement_cluster": "Seed: all six pools, two budgets and four precision requests stay together. Report seed-mean conditional fractional savings and per-radius conditional request-weighted savings, with percentile intervals; infeasible requests remain explicit and excluded only from conditional cost statistics.",
+    "prohibited": "No test of the tautological optimal-objective noninferiority; no selection of favorable block length or comparator."
+  },
+  "replay": "First and last valid event in lexicographic event order, both profiles and every frozen attack (64 cases). Recompute all 13 nominal/midpoint interfaces, two compositions, exact packet certificates, using only saved purchased input and frozen parameters. Compare to saved outputs; do not load evaluator truth during prediction.",
+  "source_policy": "Original project is read-only; disable Python bytecode, write all outputs under current work/experiments."
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "sourcebridge.error-metric-inputs",
+  "units": "micrograms per cubic meter",
+  "targets_per_profile": 213,
+  "conditions_per_library": 14,
+  "interfaces": [
+    {
+      "interface": "SourceBridge",
+      "source_label": "SourceBridge_proper_MLNI_WLS"
+    },
+    {
+      "interface": "CRH + WLS",
+      "source_label": "CRH_TKDE2016__weighted_source_affine"
+    },
+    {
+      "interface": "EPTD + WLS",
+      "source_label": "EPTD_TIFS2022__weighted_source_affine"
+    },
+    {
+      "interface": "FETD-D + WLS",
+      "source_label": "FETD_D_AAAI2023__weighted_source_affine"
+    },
+    {
+      "interface": "FETD-AK + WLS",
+      "source_label": "FETD_AK_AAAI2023__weighted_source_affine"
+    },
+    {
+      "interface": "WLS median",
+      "source_label": "weighted_source_affine_median"
+    },
+    {
+      "interface": "Midpoint",
+      "source_label": "SourceBridge_packet"
+    },
+    {
+      "interface": "CRH, native",
+      "source_label": "CRH_TKDE2016__native"
+    },
+    {
+      "interface": "EPTD, native",
+      "source_label": "EPTD_TIFS2022__native"
+    },
+    {
+      "interface": "FETD-AK, native",
+      "source_label": "FETD_AK_AAAI2023__native"
+    },
+    {
+      "interface": "FETD-D, native",
+      "source_label": "FETD_D_AAAI2023__native"
+    }
+  ],
+  "library": [
+    "anchor_g0.7_q0",
+    "anchor_g0.7_q250",
+    "anchor_g0.7_q500",
+    "anchor_g1.3_q0",
+    "anchor_g1.3_q250",
+    "anchor_g1.3_q500",
+    "clean",
+    "reverse_anchors",
+    "target_+20",
+    "target_+5",
+    "target_+80",
+    "target_-20",
+    "target_-5",
+    "target_-80"
+  ],
+  "excluded_controls": [
+    "translate_+200",
+    "translate_-200"
+  ],
+  "original_sources": {
+    "predictions_csv": {
+      "archive_path": "SourceBridge_complete/latest/experiments/portable/data/source_bridge_public_repaired_confirmation_cells.csv",
+      "sha256": "4efd23244145bd4584bb8275126ccd3f14bf2bf33c63e7ba87573102010ab192",
+      "rows": 102240
+    },
+    "metrics_json": {
+      "archive_path": "SourceBridge_complete/latest/experiments/metrics.json",
+      "sha256": "054590a480c846094a77424570b6d076dd69a6cb73c17925d4595be9ba7227ba",
+      "field": "public.event_stats.worst_se"
+    }
+  },
+  "bundled_inputs": {
+    "target_error_summaries.csv": {
+      "rows": 4686,
+      "sha256": "cfe0b8ef9811f483deedcace13e066eddbcae6c9dcd7a433e82e7bb005f9a265"
+    },
+    "condition_error_summaries.csv": {
+      "rows": 308,
+      "sha256": "78c540677fcfc636c672f60d09b3453d473c1a415cd6abd0859a63a90779d254"
+    }
+  },
+  "extraction_validation": {
+    "status": "PASS",
+    "full_prediction_rows": 102240,
+    "complete_bundles": 6390,
+    "conditions_per_bundle": 16,
+    "displayed_target_summaries": 4686,
+    "displayed_condition_summaries": 308,
+    "targetwise_max_absolute_error_vs_sqrt_frozen_worst_se_max_difference": 0.0
+  },
+  "definitions": {
+    "target_error_summaries": "For each displayed method/profile/target: original frozen maximum squared error across the 14-condition library and original clean absolute error.",
+    "condition_error_summaries": "For each displayed method/profile/condition: all 213 squared and absolute errors summed with math.fsum, plus the observed maximum absolute error. No weighting or target filtering."
+  },
+  "proper_mlni_equivalence": {
+    "sourcebridge_label": "SourceBridge_proper_MLNI_WLS",
+    "comparator_label": "MLNI_JSAC2022__proper_public_WLS",
+    "compared_prediction_cells": 6816,
+    "exactly_equal_cells": 6816,
+    "max_absolute_prediction_difference": 0.0,
+    "scope": "All 213 targets, both profiles and all 16 recorded conditions. Confirmed from original prediction cells during input extraction; the optional CSV check repeats this comparison."
+  },
+  "observation_scope": "Frozen predictions from the declared 28-day semi-synthetic public-reference block. Reaggregation does not create new experiments or significance evidence."
+}

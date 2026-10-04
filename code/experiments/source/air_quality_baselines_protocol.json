@@ -1,0 +1,106 @@
+{
+  "protocol_id": "spptd_msra_training_corruption_diagnostic_v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "purpose": "Published plaintext truth-discovery cores on one common MSRA reference field, then a separately reported extended malicious-source stress diagnostic. Localize correlation-driven error transmission; no new method, novelty claim, cryptographic claim or SOTA claim.",
+  "dataset": {
+    "path": "data/msra_urban_air/interface/beijing_first28days_all_pollutants.npz",
+    "pollutant": "PM25_Concentration",
+    "allowed_partition": "Only station_split=station_train AND temporal_split=train from the already prepared MSRA interface",
+    "stations": "First eight lexicographically sorted station_train IDs; never selected by values or algorithm performance",
+    "day_blocks": ["2014-05-01","2014-05-05","2014-05-09"],
+    "object_grid": "Each fixed day has eight stations x 24 exact hourly timestamps, up to 192 objects. Object order is time ascending, then station_id ascending. One object is one station-time PM2.5 value; stations are not worker identities.",
+    "natural_missing_reference": "Use the original reference_observed mask; unavailable cells are retained in a grid ledger and cannot be used to simulate/evaluate known-truth reports. All methods get the identical remaining object IDs. No value-based filtering or interpolation, no replacing a fixed day/station.",
+    "phases": "Hours 00:00-05:00 are reference phase; 06:00-23:00 are evaluation phase. Both remain inside the preexisting large training partition. This is development evidence, not a newly untouched confirmation test.",
+    "reference_selection": "Within available reference-phase objects, rank SHA256('spptd-msra-paid-reference-v1:'+station_id+'|'+timestamp); take prefix K=3 or K=12. The same reference pool and nested IDs are used for all methods/scenarios/seeds of the day. No reference selection by q/span/errors. If fewer than 12 valid reference cells, retain the day as unavailable and do not replace it.",
+    "reference_truth_access": "Only the selected K labels may enter hyperparameter selection or calibration. Other first-six-hour truth values and all final-18-hour truth values are evaluator-only. Metadata and unlabeled reports for the chosen phase are shared by all algorithms.",
+    "offline_scope": "Final inference is transductive over all 24 hours of unlabeled reports. It may read future-within-day reports and must not be called an online causal predictor. Hyperparameter fitting uses only reference-phase reports and K labels."
+  },
+  "design": {
+    "seeds": [319031,319032],
+    "sources": 12,
+    "reference_budgets": [3,12],
+    "base_report_cases": 24,
+    "method_budget_conditions": 48,
+    "complete_participation": "All 12 abstract synthetic source identities report every available object. This preserves direct compatibility with existing checked CRH/EPTD/FETD cores. It evaluates a complete-participation special case of S-PPTD; it is not a sparse-performance reproduction.",
+    "scenarios": [
+      {"id":"homogeneous_honest","gain":"all 1","bias":"all 0","attack":"none"},
+      {"id":"heterogeneous_honest","gain":"per source Uniform(0.7,1.3)","bias":"per source Uniform(0,20) ug/m3","attack":"none"},
+      {"id":"heterogeneous_coordinated","gain":"same draws as heterogeneous_honest","bias":"same draws","attack":"last 3 source identities add +80 ug/m3 to every evaluation-phase report; reference phase unchanged"},
+      {"id":"heterogeneous_localized","gain":"same draws as heterogeneous_honest","bias":"same draws","attack":"same last 3 identities add +80 ug/m3 only for first 2 selected station IDs at hours 12:00-15:00; all other reports unchanged"}
+    ],
+    "source_noise": "sigma_i~Uniform(0.03,0.25); e_ij=sigma_i*q_j*Uniform(-1,1), drawn once per day/seed and reused across four scenarios. This bounded multiplicative noise is explicitly synthetic, not fitted from real crowd residuals.",
+    "generator_seed": "numpy.default_rng(seed+1000*zero_based_day_index)",
+    "draw_order": "12 sigma values; 12 gains; 12 biases; 12 x N objects unit errors; same order and master draws in all scenarios",
+    "no_hidden_saturation": "Do not clip generated reports. Expected nonnegativity follows gain>=0.7, sigma<=0.25 and bias>=0; check stored arrays. Declared primary public scale is M=2048 ug/m3. If a stored report violates [0,2048), record the planned case as input_contract_failed for every main method rather than silently clip or pick a replacement field."
+  },
+  "relations": {
+    "temporal": "Undirected edges between same-station objects exactly one hour apart; missing hours are not bridged",
+    "spatial": "At each identical timestamp, connect stations that belong to either endpoint's two nearest selected stations by Haversine distance computed solely from supplied coordinates. Rank ties by station ID. No value-based neighbors.",
+    "mixed": "Union of temporal(type 1) and spatial(type 2), no self edges; these definitions cannot overlap on the same pair",
+    "reference_graph": "Induced graph on first-six-hour available objects only",
+    "group_order": "For grouped schedule use the core's deterministic greedy independent_groups with the fixed time-then-station object order; group order is the returned order",
+    "shared_information": "All methods receive identical object IDs, coordinates, timestamps, masks and reports; an original estimator need not be changed to force it to consume metadata it does not use."
+  },
+  "published_cores": [
+    {"id":"CRH_TKDE2016","implementation":"group_methods.py:crh_blocks equations, thin trace-capable reproduction with same normalized absolute loss/max-log weights/weighted median","adaptations":"Declared mean initialization, floors and equal-weight tie rule unchanged; fixed iteration budget and convergence metadata added"},
+    {"id":"EPTD_TIFS2022","implementation":"literature_baseline_extra.py:eptd_crh","doi":"10.1109/TIFS.2022.3207905","adaptations":"Existing explicitly declared deterministic mean initialization; squared CRH numerical core only, no encryption"},
+    {"id":"FETD_AK_AAAI2023","implementation":"triangles_batch_cores.py:fetd_batch variant AK","doi":"10.1609/aaai.v37i5.25750","adaptations":"Existing complete numerical matrix, pairwise squared-distance implementation"},
+    {"id":"FETD_D_AAAI2023","implementation":"triangles_batch_cores.py:fetd_batch variant D","same_paper_as":"FETD_AK_AAAI2023"},
+    {"id":"SPPTD_TDoOC_TDSC2025","implementation":"spptd_plaintext_core.py:run_spptd_plaintext","doi":"10.1109/TDSC.2025.3545374","adaptations":"Independent reconstruction with explicitly selectable update schedule; normalized numerical inference only, not the secret-sharing system"}
+  ],
+  "paper_count": "Four papers, five core labels because FETD has two variants. EPTD and S-PPTD inherit CRH-family numerical ideas; do not inflate the count of distinct algorithmic inventions. MLNI is deferred in this bounded round because a fair sparse/gold-prior protocol is separate; do not invent its missing formulas or quietly use the old truncated-convergence implementation.",
+  "statistical_controls": ["arithmetic_mean","median"],
+  "common_calibration": {
+    "main_native_table": "Physical-unit raw core outputs. Methods may tune their declared hyperparameters using the same selected reference labels; no source-level offset/affine adapter is inserted.",
+    "secondary_shared_adapter_table": "Every paper core and mean/median receives exactly the same scalar post-aggregation affine calibration q=a*z+b, fitted using K paid reference pairs. This is our shared adapter, not a paper contribution or another baseline paper.",
+    "affine_rule": "In physical ug/m3 units, a=(sum((z-zbar)*(q-qbar))+0.01*sum((z-zbar)^2))/(1.01*sum((z-zbar)^2)); b=qbar-a*zbar. If sum squares<=1e-14, set a=1 and fit only b. No truth clipping, sign clipping, normalization from held labels, or oracle correction.",
+    "selection_loss_native": "Mean squared error on K reference labels from a candidate fit using only all reference-phase reports; ties choose lowest predeclared grid index",
+    "selection_loss_shared_adapter": "For each candidate's reference-phase predictions, leave one of K reference labels out, fit the affine map using K-1 labels only, predict held reference, average physical-unit squared errors. The core itself is label-free. Held labels enter only scoring, not centering/scaling/fitting.",
+    "final_fit": "After selecting native/shared-adapter configurations without evaluation truths, run the selected native core on all 24h reports. For the secondary shared-adapter output, fit its affine map on the selected K labels and the final core's predictions at those reference IDs, then apply it to evaluation outputs. This permits transductive recalibration and must be explicitly reported.",
+    "domain": "Affine mapping occurs only after aggregation, so it cannot push S-PPTD core inputs outside [0,1). No per-source affine/offset front end in this protocol. M=2048 is fixed public normalization for all main cores, independent of labels/test extrema."
+  },
+  "spptd_grid": {
+    "public_scale": 2048.0,
+    "temporal_degree": 1,
+    "alphas": [0.1,1.0,10.0],
+    "spatial_variances": [0.0001,0.01],
+    "schedules": ["synchronous","grouped"],
+    "grid_order": "alpha outer, variance middle, schedule inner in listed order; prepend one alpha=0 synchronous/variance=0.01 no-correlation candidate",
+    "candidate_count": 13,
+    "ambiguity_policy": "Both published variance-symbol interpretations are retained; schedule is a declared independent implementation convention. Report raw grid reference scores and choices, not just the better-looking evaluation result.",
+    "fixed_paper_reference_outputs": "Also show alpha=0.1,synchronous,variance=0.01 and variance=0.0001 explicitly; these are two interpretations of the same paper, not extra papers. Their original hyperparameters are not asserted to be uniquely recovered.",
+    "zero_residual_policy": "strict main runs; retain undefined cases. Predeclared floor sensitivity eta=1e-10 in normalized squared-residual-sum units, applied only if strict hits a zero-residual singularity, labeled regularized variant and reported beside strict rather than silently replacing it."
+  },
+  "iterations": {
+    "max_iterations": 500,
+    "CRH_EPTD_stop": "max absolute truth change <=1e-6 in fixed normalized units",
+    "SPPTD_stop": "sum absolute truth changes <=1e-6 in fixed normalized units; relative tolerance=0",
+    "fixed_not_tuned": "Caps and stopping thresholds are fixed before observing any evaluation truth; do not select the best evaluation iteration. Preserve finite max_iterations outputs but mark not converged, along with iteration count/last delta/weight delta. Undefined results are not assigned fallback mean predictions.",
+    "FETD": "closed-form numerical core; not an iterative convergence claim"
+  },
+  "correlation_ablations": {
+    "none": "alpha=0; same squared-residual weight update, one core ablation not another paper",
+    "temporal_only":"Use only temporal edges with the selected mixed-SPPTD configuration; do not retune on evaluation outcomes",
+    "spatial_only":"Use only spatial edges with the selected mixed-SPPTD configuration; no evaluation retuning",
+    "static_same_adjacency":"Keep mixed graph and selected alpha/schedule. In the reference phase, compute initial per-object arithmetic-mean reports in normalized units; average original temporal kernel over reference temporal edges and original spatial kernel over reference spatial edges. Freeze one nonnegative constant per relation type from these unlabeled reference reports and use that constant on every corresponding edge throughout final inference. Record constants. This matches reference mean edge strength, avoids evaluation truth/current-truth-dependent kernels, and remains our ablation rather than a paper method.",
+    "scale_sensitivity":"For selected mixed configuration, one predeclared M=4096 run with alpha/variance unchanged, no retuning or winner selection. Other parameters and reports unchanged. Record the physical-output difference as unit-sensitivity diagnostic; not another principal baseline or an improvement attempt.",
+    "matching":"The heterogeneous honest/coordinated/localized scenarios have bitwise identical reference-phase reports, so candidate choices and static constants must be identical. Verify this before interpreting attack effects."
+  },
+  "metrics": {
+    "clean_main":"Separate homogeneous and heterogeneous honest tables: RMSE, MAE, P95 absolute error in ug/m3; every method same evaluation object pool. Native and shared affine-adapter tables separate.",
+    "extended_attack":"Separate coordinated and localized tables with paired change from heterogeneous_honest, same day/seed/K/config; RMSE/MAE plus absolute prediction shift. This extends S-PPTD's honest-user threat model and does not test or refute its semi-honest-cloud privacy theorem.",
+    "localized_regions":"Predeclare directly attacked object IDs (first 2 stations,12:00-15:00); unmodified one-hop graph neighbors outside that set; all remaining unmodified evaluation objects. Preserve empty regions explicitly; do not relabel by observed errors.",
+    "propagation":"On unmodified neighbor objects, compare attack-minus-honest output shift for mixed dynamic kernel, alpha=0, temporal-only, spatial-only and reference-frozen static kernel. Global reliability updates can spread errors even with alpha=0; only differential comparisons support a kernel-associated effect. Do not equate larger RMSE with proof of iterative self-amplification.",
+    "iteration_trace":"For selected mixed, alpha=0 and static runs retain per-iteration region prediction change, source weights/residuals, kernel mass and denominators. An amplification claim requires a trace-supported increasing perturbation beyond the no-kernel/static controls, not merely a final difference.",
+    "failure":"Converged/max_iterations/undefined/input_contract_failed counts and object coverage; no dropping nonconverged or failed conditions from headline totals",
+    "runtime":"Record inference, reference-grid selection and shared calibration times separately; no cryptographic/network time claim"
+  },
+  "integrity_and_reporting": [
+    "Freeze protocol, data interface, generator, wrapper and every imported numerical core hash before generating/solving performance cases.",
+    "Store generator/reference/evaluation roles separately; prediction code does not receive evaluation truth. Score only after selections and output arrays are finalized.",
+    "Counterfactual check: permuting evaluator-only labels must not change reports already generated, selected configuration or saved predictions; reference-only candidate scores/affine fits are independently recomputable.",
+    "One small deterministic adapter check against existing complete CRH/EPTD/FETD implementations suffices; no repetitive toy suite as research evidence.",
+    "Keep all fixed days, seeds, reference budgets, candidate choices, ties, nonconvergence and negative outcomes. The 48 conditions reuse one dataset and three days, not 48 independent datasets/trials.",
+    "Report scope limits: complete participation, synthetic identities/noise/attacks and trusted paid labels, one pollutant, limited days and source count. No claim of multi-modal validation or publication readiness."
+  ]
+}

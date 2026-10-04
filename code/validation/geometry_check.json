@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact structural audit; no empirical predictive evidence",
+  "directional_exact_checks": 384,
+  "attainability_witness_checks": 384,
+  "model_cases": 15,
+  "budget_pairing_queries": 328,
+  "threshold_pairing_queries": 192,
+  "projection_checks": 20,
+  "source_hashes_unchanged": {
+    "reference_geometry.py": "73a7446a7870930532edee1e03e0c28b5c95c9b07e6b33ffccb26237ccb72ea5",
+    "additive_selection.py": "7b7b443efdcaa80cd4e73f882ef3294d29f64af9cb4407ee30ff7c3cf92d9fde",
+    "catalog_selection.py": "5eed400b0493efb3fde4b8c1cbe646458c35d4081bce1ad901ef99b3cb4a67ea",
+    "packet_geometry.py": "5ca9e6c16fb2d632063cb90b2c54868d0ec90d1242314cc0c7b59bcc92de4b04"
+  },
+  "model_results": [
+    {
+      "name": "four_anchor_tight",
+      "full_directions": [
+        "20/3",
+        "20/3"
+      ],
+      "full_width": "20/3",
+      "positive_support": [
+        0,
+        1
+      ],
+      "negative_support": [
+        2,
+        3
+      ],
+      "minimum_union_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "all_subset_widths": {
+        "": "20",
+        "0": "20",
+        "1": "21/2",
+        "2": "21/2",
+        "3": "20",
+        "0,1": "28/3",
+        "0,2": "8",
+        "0,3": "8",
+        "1,2": "9",
+        "1,3": "8",
+        "2,3": "28/3",
+        "0,1,2": "8",
+        "0,1,3": "48/7",
+        "0,2,3": "48/7",
+        "1,2,3": "8",
+        "0,1,2,3": "20/3"
+      }
+    },
+    {
+      "name": "equal_gain_points",
+      "full_directions": [
+        "0",
+        "0"
+      ],
+      "full_width": "0",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        0
+      ],
+      "minimum_union_support": [
+        0
+      ],
+      "all_subset_widths": {
+        "": "11",
+        "0": "0",
+        "1": "0",
+        "0,1": "0"
+      }
+    },
+    {
+      "name": "target_point",
+      "full_directions": [
+        "0",
+        "0"
+      ],
+      "full_width": "0",
+      "positive_support": [],
+      "negative_support": [],
+      "minimum_union_support": [],
+      "all_subset_widths": {
+        "": "0",
+        "0": "0",
+        "1": "0",
+        "0,1": "0"
+      }
+    },
+    {
+      "name": "nonsubmodular",
+      "full_directions": [
+        "0",
+        "0"
+      ],
+      "full_width": "0",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        0,
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "1",
+        "0": "1",
+        "1": "1",
+        "0,1": "0"
+      }
+    },
+    {
+      "name": "narrow_span_two_directions",
+      "full_directions": [
+        "4",
+        "4"
+      ],
+      "full_width": "4",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "10",
+        "0": "5",
+        "1": "5",
+        "0,1": "4"
+      }
+    },
+    {
+      "name": "fixed_seed_0",
+      "full_directions": [
+        "4",
+        "28/5"
+      ],
+      "full_width": "28/5",
+      "positive_support": [
+        2
+      ],
+      "negative_support": [
+        0,
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1,
+        2
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "25/3",
+        "1": "40/3",
+        "2": "14",
+        "3": "38/3",
+        "0,1": "25/3",
+        "0,2": "133/23",
+        "0,3": "25/3",
+        "1,2": "168/25",
+        "1,3": "38/3",
+        "2,3": "112/11",
+        "0,1,2": "28/5",
+        "0,1,3": "25/3",
+        "0,2,3": "133/23",
+        "1,2,3": "168/25",
+        "0,1,2,3": "28/5"
+      }
+    },
+    {
+      "name": "fixed_seed_1",
+      "full_directions": [
+        "3",
+        "40/3"
+      ],
+      "full_width": "40/3",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "14",
+        "1": "40/3",
+        "2": "14",
+        "3": "14",
+        "0,1": "40/3",
+        "0,2": "14",
+        "0,3": "14",
+        "1,2": "40/3",
+        "1,3": "40/3",
+        "2,3": "14",
+        "0,1,2": "40/3",
+        "0,1,3": "40/3",
+        "0,2,3": "14",
+        "1,2,3": "40/3",
+        "0,1,2,3": "40/3"
+      }
+    },
+    {
+      "name": "fixed_seed_2",
+      "full_directions": [
+        "10",
+        "98/9"
+      ],
+      "full_width": "98/9",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        0,
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "38/3",
+        "1": "38/3",
+        "2": "14",
+        "3": "14",
+        "0,1": "98/9",
+        "0,2": "38/3",
+        "0,3": "38/3",
+        "1,2": "121/10",
+        "1,3": "62/5",
+        "2,3": "14",
+        "0,1,2": "98/9",
+        "0,1,3": "98/9",
+        "0,2,3": "38/3",
+        "1,2,3": "121/10",
+        "0,1,2,3": "98/9"
+      }
+    },
+    {
+      "name": "fixed_seed_3",
+      "full_directions": [
+        "145/17",
+        "5"
+      ],
+      "full_width": "145/17",
+      "positive_support": [
+        1,
+        2
+      ],
+      "negative_support": [
+        1
+      ],
+      "minimum_union_support": [
+        1,
+        2
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "10",
+        "1": "13",
+        "2": "10",
+        "3": "14",
+        "0,1": "19/2",
+        "0,2": "35/4",
+        "0,3": "10",
+        "1,2": "145/17",
+        "1,3": "13",
+        "2,3": "10",
+        "0,1,2": "145/17",
+        "0,1,3": "19/2",
+        "0,2,3": "35/4",
+        "1,2,3": "145/17",
+        "0,1,2,3": "145/17"
+      }
+    },
+    {
+      "name": "fixed_seed_4",
+      "full_directions": [
+        "6",
+        "134/19"
+      ],
+      "full_width": "134/19",
+      "positive_support": [
+        3
+      ],
+      "negative_support": [
+        0,
+        3
+      ],
+      "minimum_union_support": [
+        0,
+        3
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "38/3",
+        "1": "14",
+        "2": "40/3",
+        "3": "38/3",
+        "0,1": "38/3",
+        "0,2": "38/3",
+        "0,3": "134/19",
+        "1,2": "40/3",
+        "1,3": "52/7",
+        "2,3": "154/19",
+        "0,1,2": "38/3",
+        "0,1,3": "134/19",
+        "0,2,3": "134/19",
+        "1,2,3": "52/7",
+        "0,1,2,3": "134/19"
+      }
+    },
+    {
+      "name": "fixed_seed_5",
+      "full_directions": [
+        "7",
+        "59/7"
+      ],
+      "full_width": "59/7",
+      "positive_support": [
+        2
+      ],
+      "negative_support": [
+        0,
+        2
+      ],
+      "minimum_union_support": [
+        0,
+        2
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "40/3",
+        "1": "14",
+        "2": "29/3",
+        "3": "14",
+        "0,1": "40/3",
+        "0,2": "59/7",
+        "0,3": "40/3",
+        "1,2": "105/11",
+        "1,3": "14",
+        "2,3": "9",
+        "0,1,2": "59/7",
+        "0,1,3": "40/3",
+        "0,2,3": "59/7",
+        "1,2,3": "9",
+        "0,1,2,3": "59/7"
+      }
+    },
+    {
+      "name": "fixed_seed_6",
+      "full_directions": [
+        "4",
+        "52/11"
+      ],
+      "full_width": "52/11",
+      "positive_support": [
+        1
+      ],
+      "negative_support": [
+        0,
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "14",
+        "1": "14",
+        "2": "38/3",
+        "3": "9",
+        "0,1": "52/11",
+        "0,2": "41/4",
+        "0,3": "9",
+        "1,2": "38/3",
+        "1,3": "122/19",
+        "2,3": "97/11",
+        "0,1,2": "52/11",
+        "0,1,3": "52/11",
+        "0,2,3": "97/11",
+        "1,2,3": "122/19",
+        "0,1,2,3": "52/11"
+      }
+    },
+    {
+      "name": "fixed_seed_7",
+      "full_directions": [
+        "6",
+        "82/13"
+      ],
+      "full_width": "82/13",
+      "positive_support": [
+        1
+      ],
+      "negative_support": [
+        1,
+        2
+      ],
+      "minimum_union_support": [
+        1,
+        2
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "12",
+        "1": "26/3",
+        "2": "41/3",
+        "3": "40/3",
+        "0,1": "58/7",
+        "0,2": "163/19",
+        "0,3": "52/5",
+        "1,2": "82/13",
+        "1,3": "15/2",
+        "2,3": "40/3",
+        "0,1,2": "82/13",
+        "0,1,3": "15/2",
+        "0,2,3": "163/19",
+        "1,2,3": "82/13",
+        "0,1,2,3": "82/13"
+      }
+    },
+    {
+      "name": "fixed_seed_8",
+      "full_directions": [
+        "9",
+        "29/3"
+      ],
+      "full_width": "29/3",
+      "positive_support": [
+        2
+      ],
+      "negative_support": [
+        2,
+        3
+      ],
+      "minimum_union_support": [
+        2,
+        3
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "14",
+        "1": "14",
+        "2": "31/3",
+        "3": "14",
+        "0,1": "14",
+        "0,2": "31/3",
+        "0,3": "107/8",
+        "1,2": "31/3",
+        "1,3": "185/14",
+        "2,3": "29/3",
+        "0,1,2": "31/3",
+        "0,1,3": "185/14",
+        "0,2,3": "29/3",
+        "1,2,3": "29/3",
+        "0,1,2,3": "29/3"
+      }
+    },
+    {
+      "name": "fixed_seed_9",
+      "full_directions": [
+        "10",
+        "8"
+      ],
+      "full_width": "10",
+      "positive_support": [
+        0
+      ],
+      "negative_support": [
+        1
+      ],
+      "minimum_union_support": [
+        0,
+        1
+      ],
+      "all_subset_widths": {
+        "": "14",
+        "0": "10",
+        "1": "34/3",
+        "2": "14",
+        "3": "14",
+        "0,1": "10",
+        "0,2": "10",
+        "0,3": "10",
+        "1,2": "10",
+        "1,3": "34/3",
+        "2,3": "82/7",
+        "0,1,2": "10",
+        "0,1,3": "10",
+        "0,2,3": "10",
+        "1,2,3": "10",
+        "0,1,2,3": "10"
+      }
+    }
+  ]
+}

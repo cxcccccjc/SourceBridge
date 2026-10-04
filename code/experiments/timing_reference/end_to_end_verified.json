@@ -1,0 +1,329 @@
+{
+  "status": "PASS",
+  "scope": "Floating-point LP catalogs and floating-point API checks. This timing experiment is not rational certification.",
+  "protocol_sha256": "f0e9d8ceea2a260214f5f90b39c84b1018c9fce547d6af347c782d6e65ee62fc",
+  "raw_sha256": "6af1b7abf314ccc4e4a7e9446cb440bdb6c0b7444b2e414af3fa90ab0d8e8813",
+  "measured_batches": 48,
+  "retained_batches": 36,
+  "matched_queries_including_warmups": 264,
+  "groups": [
+    {
+      "n": 8,
+      "K": 1,
+      "catalog_size": 37,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 0.06712920000427403,
+            "min": 0.06687439998495393,
+            "max": 0.06730049999896437
+          },
+          "query_batch_seconds": {
+            "median": 0.0027802000113297254,
+            "min": 0.0027633999998215586,
+            "max": 0.0027954000106547028
+          },
+          "whole_batch_seconds": {
+            "median": 0.06990940001560375,
+            "min": 0.06963779998477548,
+            "max": 0.07009590000961907
+          },
+          "amortized_seconds_per_query": 0.06990940001560375
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 0.06722930000978522,
+            "min": 0.06697529999655671,
+            "max": 0.0679039999959059
+          },
+          "query_batch_seconds": {
+            "median": 0.0021893999946769327,
+            "min": 0.0021413000067695975,
+            "max": 0.0022240999969653785
+          },
+          "whole_batch_seconds": {
+            "median": 0.06941870000446215,
+            "min": 0.06911660000332631,
+            "max": 0.07012809999287128
+          },
+          "amortized_seconds_per_query": 0.06941870000446215
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 1.003156209786401,
+        "min": 0.9995408405010904,
+        "max": 1.0114704718148648,
+        "values": [
+          1.003156209786401,
+          0.9995408405010904,
+          1.0114704718148648
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "K": 10,
+      "catalog_size": 37,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 0.06692700000712648,
+            "min": 0.06676670000888407,
+            "max": 0.06758589998935349
+          },
+          "query_batch_seconds": {
+            "median": 0.028725000011036173,
+            "min": 0.028614999988349155,
+            "max": 0.028785700007574633
+          },
+          "whole_batch_seconds": {
+            "median": 0.09565200001816265,
+            "min": 0.09538169999723323,
+            "max": 0.09637159999692813
+          },
+          "amortized_seconds_per_query": 0.009565200001816265
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 0.06693520001135767,
+            "min": 0.06663190000108443,
+            "max": 0.06786929999361746
+          },
+          "query_batch_seconds": {
+            "median": 0.021309100004145876,
+            "min": 0.021241999987978488,
+            "max": 0.021879200008697808
+          },
+          "whole_batch_seconds": {
+            "median": 0.08824430001550354,
+            "min": 0.08787389998906292,
+            "max": 0.08974850000231527
+          },
+          "amortized_seconds_per_query": 0.008824430001550355
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 1.0808822777275782,
+        "min": 1.0737962193734938,
+        "max": 1.0885143373637431,
+        "values": [
+          1.0737962193734938,
+          1.0808822777275782,
+          1.0885143373637431
+        ]
+      }
+    },
+    {
+      "n": 32,
+      "K": 1,
+      "catalog_size": 529,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 1.0004584999987856,
+            "min": 0.9931161999993492,
+            "max": 1.0078930000017863
+          },
+          "query_batch_seconds": {
+            "median": 0.19199190000654198,
+            "min": 0.1893829999899026,
+            "max": 0.21059349999995902
+          },
+          "whole_batch_seconds": {
+            "median": 1.1998849000083283,
+            "min": 1.1824991999892518,
+            "max": 1.2110519999987446
+          },
+          "amortized_seconds_per_query": 1.1998849000083283
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 1.0052894999971613,
+            "min": 1.0032409999985248,
+            "max": 1.0199097000004258
+          },
+          "query_batch_seconds": {
+            "median": 0.005719400011003017,
+            "min": 0.005558599979849532,
+            "max": 0.0057323000219184905
+          },
+          "whole_batch_seconds": {
+            "median": 1.0108480999770109,
+            "min": 1.0089733000204433,
+            "max": 1.0256291000114288
+          },
+          "amortized_seconds_per_query": 1.0108480999770109
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 1.187008117278567,
+        "min": 1.152950125904262,
+        "max": 1.2002815138658347,
+        "values": [
+          1.152950125904262,
+          1.187008117278567,
+          1.2002815138658347
+        ]
+      }
+    },
+    {
+      "n": 32,
+      "K": 10,
+      "catalog_size": 529,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 0.9998980000091251,
+            "min": 0.9950614999979734,
+            "max": 1.0014041000104044
+          },
+          "query_batch_seconds": {
+            "median": 2.0328036999853794,
+            "min": 2.017505899973912,
+            "max": 2.03719109998201
+          },
+          "whole_batch_seconds": {
+            "median": 3.0322525999799836,
+            "min": 3.0174038999830373,
+            "max": 3.0342077999957837
+          },
+          "amortized_seconds_per_query": 0.3032252599979984
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 1.0105527999985497,
+            "min": 1.0088738999911584,
+            "max": 1.0166367000201717
+          },
+          "query_batch_seconds": {
+            "median": 0.05655629999819212,
+            "min": 0.056408300006296486,
+            "max": 0.05771119997370988
+          },
+          "whole_batch_seconds": {
+            "median": 1.0671090999967419,
+            "min": 1.0652821999974549,
+            "max": 1.0743478999938816
+          },
+          "amortized_seconds_per_query": 0.10671090999967418
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 2.827643302819037,
+        "min": 2.822412181377422,
+        "max": 2.848266684642842,
+        "values": [
+          2.848266684642842,
+          2.822412181377422,
+          2.827643302819037
+        ]
+      }
+    },
+    {
+      "n": 64,
+      "K": 1,
+      "catalog_size": 2081,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 3.933220099977916,
+            "min": 3.929334699991159,
+            "max": 3.9373331000097096
+          },
+          "query_batch_seconds": {
+            "median": 2.9930285000009462,
+            "min": 2.9924591000017244,
+            "max": 3.031282599986298
+          },
+          "whole_batch_seconds": {
+            "median": 6.9256791999796405,
+            "min": 6.922363199992105,
+            "max": 6.968615699996008
+          },
+          "amortized_seconds_per_query": 6.9256791999796405
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 3.9611428000207525,
+            "min": 3.9172323999810033,
+            "max": 4.117639700009022
+          },
+          "query_batch_seconds": {
+            "median": 0.023648599977605045,
+            "min": 0.023618599982000887,
+            "max": 0.024139300017850474
+          },
+          "whole_batch_seconds": {
+            "median": 3.9847913999983575,
+            "min": 3.9413716999988537,
+            "max": 4.141258299991023
+          },
+          "amortized_seconds_per_query": 3.9847913999983575
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 1.748803136846481,
+        "min": 1.6723610792388037,
+        "max": 1.7563335120090597,
+        "values": [
+          1.748803136846481,
+          1.6723610792388037,
+          1.7563335120090597
+        ]
+      }
+    },
+    {
+      "n": 64,
+      "K": 10,
+      "catalog_size": 2081,
+      "methods": {
+        "enumeration": {
+          "catalog_seconds": {
+            "median": 3.9353307000128552,
+            "min": 3.9247307000041474,
+            "max": 3.9374327000114135
+          },
+          "query_batch_seconds": {
+            "median": 31.65482610001345,
+            "min": 31.577240399987204,
+            "max": 32.027552499988815
+          },
+          "whole_batch_seconds": {
+            "median": 35.5795568000176,
+            "min": 35.51257110000006,
+            "max": 35.96498520000023
+          },
+          "amortized_seconds_per_query": 3.55795568000176
+        },
+        "fast": {
+          "catalog_seconds": {
+            "median": 3.9314366999897175,
+            "min": 3.9075781000137795,
+            "max": 3.9404637000116054
+          },
+          "query_batch_seconds": {
+            "median": 0.21771139997872524,
+            "min": 0.21724090000498109,
+            "max": 0.21993240001029335
+          },
+          "whole_batch_seconds": {
+            "median": 4.1486775999946985,
+            "min": 4.127510500024073,
+            "max": 4.158175099990331
+          },
+          "amortized_seconds_per_query": 0.41486775999946984
+        }
+      },
+      "paired_whole_batch_speedup": {
+        "median": 8.62010085735944,
+        "min": 8.559973688976322,
+        "max": 8.64922335764164,
+        "values": [
+          8.559973688976322,
+          8.64922335764164,
+          8.62010085735944
+        ]
+      }
+    }
+  ]
+}

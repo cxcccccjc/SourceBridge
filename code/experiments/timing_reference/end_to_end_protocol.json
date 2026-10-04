@@ -1,0 +1,65 @@
+{
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "created_utc": "2026-09-29T23:44:09.079307+00:00",
+  "scope": "Post-review bounded timing follow-up, same frozen geometry; no new accuracy benchmark.",
+  "n": [
+    8,
+    32,
+    64
+  ],
+  "seed": 731991,
+  "K": [
+    1,
+    10
+  ],
+  "query_sequences": {
+    "1": [
+      4
+    ],
+    "10": [
+      4,
+      8,
+      4,
+      8,
+      4,
+      8,
+      4,
+      8,
+      4,
+      8
+    ]
+  },
+  "model": {
+    "target": [
+      0.0,
+      500.0
+    ],
+    "gain_bounds": [
+      0.7,
+      1.3
+    ],
+    "epsilon_target": 5.0
+  },
+  "warmups_per_method_condition": 1,
+  "retained_repeats_per_method_condition": 3,
+  "condition_order": "Ascending n, then ascending K",
+  "method_order": "Alternate enumeration/fast using (condition_index + repeat) parity, warm-up repeat=-1.",
+  "measured_interval": "External perf_counter around actual pair_catalog construction followed by all K API calls; one newly built catalog is reused within each batch, never across timed batches; includes selected-union two-LP check for every query.",
+  "excluded_from_timer": "Imports, input parsing, canonical catalog hashing, result serialization, verification, and disk I/O.",
+  "verification": "After recording all runs, require catalog hashes identical for a given n, and identical complete query tuple (selection_bound,cost,number_of_ids,ordered_ids) across methods and repetitions at each budget. Also compare reported widths.",
+  "arithmetic": "Floating-point LP catalogs and floating-point API checks. This timing experiment is not rational certification.",
+  "failures": "Retain errors and stop; no dropped repetitions or input replacements.",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "summary": "Report retained-run medians, ranges, and median of paired whole-batch enumeration/fast ratios; whole-batch amortized time is measured wall time divided by K.",
+  "hashes": {
+    "source_bridge_anchor_design.py": "0e1ccd010a30abf9d1cf27ea315c99596d35f13f70fc11b18fe6628fa6b9d847",
+    "source_bridge_additive_design.py": "83988817aa1313f7469ebd5a9453c3949b2e3e870727bbaf6b83437ad5f1bdca",
+    "source_bridge_prequery_exact.py": "bff5761f4047518a9ada6a2e3942e165195656352313a1d63f965987894c1fed",
+    "source_bridge_additive_scaling_inputs.json": "8c5c5374ef0ae0ee2544160d7559c4f32b733bfe65f3e6fc547e4e18bf4cb842"
+  },
+  "runner_sha256": "796da872e32338b491a944d283fca2df13fd05067b15efbdbf45a2693d42679c"
+}

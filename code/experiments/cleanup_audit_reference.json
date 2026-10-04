@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "precision_queries": 480,
+  "feasible": 329,
+  "globally_unreachable": 151,
+  "deletions": 26,
+  "remaining_cost_gaps": 10,
+  "tied_costs": 319,
+  "production_cleanup_imported": false,
+  "scope": "Independent standard-library deletion replay and threshold/cost checks."
+}

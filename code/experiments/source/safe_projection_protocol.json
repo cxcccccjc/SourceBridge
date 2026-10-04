@@ -1,0 +1,10 @@
+{
+  "status": "FIXED_BEFORE_BASE_RESULT_READING",
+  "default_core": "EPTD_TIFS2022__bounded_source_affine",
+  "main_policy": "MinimaxPairTable",
+  "all_other_interfaces": "retained component sensitivities",
+  "source_hashes": {
+    "source_bridge_nominal_projection.py": "f4b21359107e1676368033f288d62c5749140cdae9408d198431f4e7f2993bd9",
+    "source_bridge_nominal_projection_protocol.md": "5a88726a6528d4d3ca20abdbb472556b5211ee9fafd68f61cfed02ad35c60d82"
+  }
+}

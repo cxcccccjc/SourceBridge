@@ -1,0 +1,168 @@
+{
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scope": "Training-only MSRA development; simulated sources; no independent confirmation",
+  "dataset": "data/msra_urban_air/interface/beijing_first28days_all_pollutants.npz",
+  "dataset_sha256": "110e37b15b171cbbe596316f9340950d549248ea8da4bf73cf8ca8c9a8d51b40",
+  "days": [
+    "2014-05-01",
+    "2014-05-05",
+    "2014-05-09"
+  ],
+  "target_stations": [
+    "001001",
+    "001002"
+  ],
+  "target_hour": 12,
+  "anchor_stations": [
+    "001003",
+    "001004",
+    "001005"
+  ],
+  "anchor_hours": [
+    11,
+    13
+  ],
+  "seeds": [
+    419031,
+    419032
+  ],
+  "profiles": {
+    "exact": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "equal": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "heterogeneous": [
+      2,
+      5,
+      10,
+      20,
+      40,
+      80
+    ]
+  },
+  "costs": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "budgets": [
+    4,
+    7
+  ],
+  "scenarios": [
+    "homogeneous_honest",
+    "affine_honest",
+    "affine_two_source_attack"
+  ],
+  "policies": [
+    "MinimaxPairTable",
+    "MaxSpan",
+    "NominalCOptimal",
+    "FixedIdBudget"
+  ],
+  "spec": {
+    "target": [
+      0.0,
+      500.0
+    ],
+    "gain_bounds": [
+      0.7,
+      1.3
+    ],
+    "epsilon": 5.0,
+    "m": 9,
+    "f": 2
+  },
+  "paper_cores": [
+    "CRH_TKDE2016",
+    "EPTD_TIFS2022",
+    "FETD_AK_AAAI2023",
+    "FETD_D_AAAI2023",
+    "MLNI_JSAC2022"
+  ],
+  "adapters": [
+    "native",
+    "bounded_source_affine"
+  ],
+  "mlni_grid": [
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 0.2,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 2.0,
+      "truth_prior": 100.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 1.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 10.0
+    },
+    {
+      "prior_strength": 20.0,
+      "truth_prior": 100.0
+    }
+  ],
+  "mlni_cap": 20000,
+  "mlni_K1": {
+    "prior_strength": 2.0,
+    "truth_prior": 10.0
+  },
+  "cv": "Fold-local training-reference mean/std with <=1e-8 fallback1; transform whole unlabeled batch; fold-local affine/priors; original-unit held-reference squared error.",
+  "coptimal_weight": "3/(epsilon**2 + h**2)",
+  "timing": {
+    "warmup": 1,
+    "repetitions": 3,
+    "selection_repetitions": 1,
+    "threads": 1
+  },
+  "counterfactual": "Same fixed purchased inputs; evaluator numeric access forbidden; perturb evaluator only, not generation.",
+  "source_hashes": {
+    "source_bridge_acquisition_benchmark.py": "c9312164da4bc5db5ad62b735ba5bc5e8578540f8979ea489b5d0590303dd99a",
+    "source_bridge_acquisition_benchmark_analyze.py": "f66c5198c8e64cab7af2e084cc7fbe1bf86974f507b4f64232be225d4ad37fee",
+    "source_bridge_acquisition_published_core_protocol_DRAFT.md": "b06f0a5bcfe7cc1174411575d63d34d0dae8b61974e32a9f1f31105ca3e23a84",
+    "source_bridge_anchor_design.py": "0e1ccd010a30abf9d1cf27ea315c99596d35f13f70fc11b18fe6628fa6b9d847",
+    "source_bridge_prequery_exact.py": "bff5761f4047518a9ada6a2e3942e165195656352313a1d63f965987894c1fed",
+    "source_bridge_packet_inference.py": "c2ef07f6bf2923a705b645c52a02b7489b57fbd343e4d5a768f3c43ea35f2f1b",
+    "source_bridge_certified_reference.py": "7fde2b1d6c0182e8af11baba1db71affad9ece377169445cdbfb1aba72f6f202",
+    "audit_triangles_calibration.py": "863d39e54678122e3a9356f8abda12284f7cf901e33bb7abbd543c3736f736fc",
+    "spptd_msra_benchmark.py": "6b89f2008d6906cfb3b93111a4f0ded4ae410064ee6eae324c823346e24f2358",
+    "literature_baseline_extra.py": "5353d2f9888434a9e7cbf59b636f1e57faad9a44ade2945e07dadcb50e2163e8",
+    "triangles_batch_cores.py": "555c6d041a51d8d4ceb9f832612682c79d053ff9be5de8670cb225cd02b1193c",
+    "group_methods.py": "84f7ae3fd074a13549fcaecbebb5608ebeb5bb0120a09dbc248ed19d2e7be02b"
+  }
+}

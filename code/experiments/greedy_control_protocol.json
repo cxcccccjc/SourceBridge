@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "date": "2026-09-30",
+  "status": "FROZEN_BEFORE_GREEDY_CONTROL_EXECUTION",
+  "scope": "Post-hoc, same-objective diagnostic control on all 120 previously frozen procurement pools. No new dataset, holdout or literature baseline.",
+  "source_protocol_sha256": "a603a35b05016f5fdcc189f862801b0f7aafe3a025a343247b376c09986e6821",
+  "source_runs_sha256": "b8ae461f4e322d53cafd0e14fad62fcafb712c086316422dca81f73d06619ff6",
+  "source_inputs_sha256": "1acd374ee40571533e3efb80163974408a37606fbe034f6b6b84fa025abdca59",
+  "greedy": {
+    "initial_set": [],
+    "score": "[W(S)-W(S union {j})]/c_j, exact rational arithmetic",
+    "eligible_budget": "unselected j with total anchor cost <= the frozen budget",
+    "eligible_precision": "all unselected j",
+    "tie": "Maximum score, then lower individual anchor cost, then lower anchor ID. No outcome-dependent tie change.",
+    "stop_budget": "No eligible anchor or maximum exact single-anchor gain equals zero.",
+    "stop_precision": "W(S)<=2r; otherwise no eligible anchor or maximum exact single-anchor gain equals zero.",
+    "negative_gain": "Assert impossible by monotonicity; do not use tolerance.",
+    "zero_gain": "Do not add an anchor when maximum single-step gain is zero, even if a two-anchor completion could improve precision. Record any such stall separately.",
+    "feasibility_diagnosis": "Compare to global minimum W in all 64 subsets; distinguish genuinely unreachable thresholds from greedy stalls on globally reachable thresholds.",
+    "label": "Cost-efficiency greedy (diagnostic control)"
+  },
+  "retention": "All 120 pools, 240 budget cells, and 480 precision requests; exact optimum and original JB-RobustD records preserved unchanged.",
+  "metrics": [
+    "Budget radius gap, relative width gap, exact optimum tie rate, chosen support size, complete greedy trace.",
+    "Precision feasibility counts including true infeasibility and greedy stall; anchor and total-cost excess against the exact optimum; total cost includes coarse cost+9*(1+anchor cost).",
+    "Summary by all six span/profile strata and thresholds; seed-cluster descriptive intervals with 20,000 resamples and seed2026093002; all conditions of a seed stay together.",
+    "Exhaustive two-anchor complementarity: for each S and unordered j,k outside S, Delta_jk(S)-Delta_j(S)-Delta_k(S), exact rational values. Save all strict-positive witnesses and all zero-single-gain/positive-pair-gain witnesses.",
+    "Optimal support-size distribution over 240 budget choices and 329 feasible precision requests; representative explanation fixed as seed840101 over all spans/profiles, without changing any main comparison."
+  ],
+  "claims": "Greedy and complementarity analyses diagnose the cost of optimizing the same ambiguity objective without exact joint selection. They do not establish superiority over a published recent method, and their scenes are not new confirmation data.",
+  "no_retuning": true
+}

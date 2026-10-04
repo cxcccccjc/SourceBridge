@@ -1,0 +1,25 @@
+{
+  "protocol_id": "msra_beijing_first28days_v1",
+  "declared_before_full_airquality_parse": true,
+  "source_archive_sha256": "f72e5c162bd86da145147dad62d8d039b237a9a48b1a5f72375ed8734ffbe873",
+  "selection_basis": "Metadata only: city_id 001 Beijing; all stations; first 28 days of the documented archive start month. No data-value or algorithm-outcome selection.",
+  "city_id": "001",
+  "time_start_inclusive": "2014-05-01 00:00:00",
+  "time_stop_exclusive": "2014-05-29 00:00:00",
+  "time_step_hours": 1,
+  "time_zone": "Timestamp strings are retained verbatim; archive README does not state timezone.",
+  "time_splits": [
+    {"name": "train", "start_inclusive": "2014-05-01 00:00:00", "stop_exclusive": "2014-05-15 00:00:00"},
+    {"name": "validation", "start_inclusive": "2014-05-15 00:00:00", "stop_exclusive": "2014-05-22 00:00:00"},
+    {"name": "test", "start_inclusive": "2014-05-22 00:00:00", "stop_exclusive": "2014-05-29 00:00:00"}
+  ],
+  "station_holdout": {"ranking": "ascending SHA256 of UTF-8 'msra-station-holdout-v1:' + station_id", "test_count": "ceil(0.20 * city station count)", "rest": "train; validation is chronological within training stations"},
+  "pollutants": ["PM25_Concentration", "PM10_Concentration", "NO2_Concentration", "CO_Concentration", "O3_Concentration", "SO2_Concentration"],
+  "duplicate_policy": "Per station-time-pollutant, one unique finite numeric value is retained; repeated copies collapse; two or more different numeric values invalidate that cell and set conflict flag. NULL plus one numeric value preserves the numeric value.",
+  "missing_policy": "NULL, empty, nonnumeric and nonfinite cells remain missing. Never impute reference targets. Entire missing station-hours remain in the grid.",
+  "outlier_policy": "Do not select or remove observations by numeric size; flag negative values and report diagnostics. No algorithm evaluation occurs in this dataset preparation.",
+  "primary_example_pollutant": "PM25_Concentration",
+  "observational_unit": "station x time x pollutant; each is a distinct physical target, not a worker report",
+  "future_crowdsensing_interface": "Simulated source identities, errors, participation and attacks must be declared separately and generated only where observed reference targets exist. Original station values remain hidden from estimators except explicitly budgeted training/reference labels.",
+  "license": "Official public research download; README requests three citations. No explicit standard open license found in README or inspected official source text. Do not label CC BY."
+}

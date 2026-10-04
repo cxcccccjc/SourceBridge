@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "relocated_input_generation",
+      "status": "PASS"
+    },
+    {
+      "check": "relocated_procurement_generation",
+      "status": "PASS"
+    },
+    {
+      "check": "relocated_model_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "relocated_plotting",
+      "status": "PASS"
+    }
+  ],
+  "public_input_arrays_equal": 224,
+  "procurement_input_json_equal": true,
+  "location": "Independent directory outside the release tree; launched from another working directory."
+}

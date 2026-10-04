@@ -1,0 +1,3 @@
+numpy>=2.3,<3
+scipy>=1.15,<2
+# Optional: only group_methods.risk_weights requires cvxpy and a CLARABEL solver.

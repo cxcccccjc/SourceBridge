@@ -1,0 +1,250 @@
+[
+  {
+    "figure": "motivation",
+    "palette": "indigo_vivid",
+    "size_inches": [
+      7.16,
+      2.72
+    ],
+    "role": "Shared continuous scalar q_t, heterogeneously calibrated source identities, public calibration-object directory and ex-ante precision contract. Sparse native city context and typed information carriers; no measured observations or privacy claims.",
+    "icon_provenance": "Original native illustrations plus bundled licensed Lucide SVG role symbols; assets/lucide includes SVG originals and ISC/MIT notices; native editable paths only",
+    "reference_roles": {
+      "ETBP-TD": "Repeated identity records and typed data carriers",
+      "QPTD": "Catalog stacks, structured object dossiers and visible intermediate representations",
+      "CMAB-DTD": "Scene with independently controlled actors and a structured report matrix"
+    },
+    "minimum_explicit_pt": 8.2,
+    "maximum_explicit_pt": 9.4,
+    "text_items": 37,
+    "pure_black_text_items": 16,
+    "layout_description": "canvas, main frames, stage anchors and external routes retained; richer original-size insets, symbolic headers, weighted WLS residuals, interval/depth scan and explicit S formula; optical icon-text centering",
+    "centered_icon_text_units": [
+      {
+        "label": "Object",
+        "kind": "database",
+        "center": [
+          3.7,
+          2.185
+        ],
+        "group_width_inches": 0.43,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$T,\\ [a_{\\min},a_{\\max}]$",
+        "kind": "sliders-horizontal",
+        "center": [
+          4.215,
+          0.3875
+        ],
+        "group_width_inches": 0.905,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "Error bounds $\\epsilon_j$",
+        "kind": "ruler",
+        "center": [
+          4.215,
+          0.1725
+        ],
+        "group_width_inches": 0.915,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "Precision quote",
+        "kind": "receipt-text",
+        "center": [
+          6.1899999999999995,
+          0.75
+        ],
+        "group_width_inches": 0.9728125000000001,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$A^*$",
+        "kind": "map-pin",
+        "center": [
+          5.805,
+          0.51
+        ],
+        "group_width_inches": 0.355,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$C_r^*$",
+        "kind": "coins",
+        "center": [
+          6.575,
+          0.51
+        ],
+        "group_width_inches": 0.375,
+        "alignment": "icon and text centered together; both vertically centered"
+      }
+    ],
+    "text_overlap_pairs": [],
+    "text_within_canvas": true,
+    "native_svg_no_image": true,
+    "live_svg_text": true,
+    "content_scope": "Declared drawn features, reviewed against overview.tex and method.tex; not automatic theorem verification",
+    "new_graphic_provenance": "affine-response and catalog interval schematics retained. Public specification cells and precision receipt receive licensed role symbols and centered set/cost/radius units, without changing outer geometry or adding observations.",
+    "scientific_content": [
+      "one continuous scalar q_t",
+      "heterogeneous affine source responses",
+      "calibration locations j distinct from source identities S_i",
+      "public intervals, gain bounds, target domain and error bounds before purchase",
+      "precision quote with A*, C_r*, R <= r",
+      "unattainable request implies no purchase"
+    ],
+    "controlled_identity_encoding": null,
+    "report_header_fill_role": null,
+    "schematic_depth": null,
+    "schematic_projection_axis": null,
+    "schematic_wls": null
+  },
+  {
+    "figure": "workflow",
+    "palette": "indigo_vivid",
+    "size_inches": [
+      7.16,
+      3.4
+    ],
+    "role": "Numbered serpentine workflow. Public inputs -> supports -> two directional LPs -> duplicate-aware union -> feasibility gate; a short local gate purchases complete packets. The same matrix feeds nominal and interval-depth branches right-to-left. Quoted R bypasses data in its own lane and joins H and z at safe projection. No raster artwork, invented observations, or privacy claims.",
+    "icon_provenance": "Original native illustrations plus bundled licensed Lucide SVG role symbols; assets/lucide includes SVG originals and ISC/MIT notices; native editable paths only",
+    "reference_roles": {
+      "ETBP-TD": "Repeated identity records and typed data carriers",
+      "QPTD": "Catalog stacks, structured object dossiers and visible intermediate representations",
+      "CMAB-DTD": "Scene with independently controlled actors and a structured report matrix"
+    },
+    "minimum_explicit_pt": 8.0,
+    "maximum_explicit_pt": 9.4,
+    "text_items": 101,
+    "pure_black_text_items": 37,
+    "layout_description": "canvas, main frames, stage anchors and external routes retained; richer original-size insets, symbolic headers, weighted WLS residuals, interval/depth scan and explicit S formula; optical icon-text centering",
+    "centered_icon_text_units": [
+      {
+        "label": "Fee $C_r^*$",
+        "kind": "coins",
+        "center": [
+          6.3075,
+          2.8375
+        ],
+        "group_width_inches": 0.62,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$R=W(A^*)/2$",
+        "kind": "ruler",
+        "center": [
+          6.3075,
+          2.6125
+        ],
+        "group_width_inches": 0.745,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$S=[u-R,\\ell+R]\\cap T$",
+        "kind": "ruler",
+        "center": [
+          1.0475,
+          1.09
+        ],
+        "group_width_inches": 1.125,
+        "alignment": "icon and text centered together; both vertically centered"
+      },
+      {
+        "label": "$\\widehat q_t=\\Pi_{S(H,R)}(z)$",
+        "kind": "receipt-text",
+        "center": [
+          1.05,
+          0.485
+        ],
+        "group_width_inches": 0.85,
+        "alignment": "icon and text centered together; both vertically centered"
+      }
+    ],
+    "text_overlap_pairs": [],
+    "text_within_canvas": true,
+    "native_svg_no_image": true,
+    "live_svg_text": true,
+    "content_scope": "Declared drawn features, reviewed against overview.tex and method.tex; not automatic theorem verification",
+    "new_graphic_provenance": "directional feasible-set glyphs retained for the actual three-variable LP. WLS uses explanatory synthetic weighted marks and residuals, with public midpoint proxies d_j (not ground truth). MLNI illustrates residual-bias/variance updates without convergence or global-optimum claims. The same four intervals yield depth scan q=.45 and H=[.30,.57]. S is drawn as [u-R,l+R] intersect T with independently quoted R.",
+    "scientific_content": [
+      "public specifications and request before collection",
+      "m > 2f complete source identities",
+      "two directional LP values per support of at most two objects",
+      "shared-cost union of at most four objects",
+      "purchase only on feasible quote",
+      "unattainable request implies no purchase",
+      "same complete matrix feeds both branches",
+      "nominal WLS + proper MLNI branch",
+      "source intervals and depth >= m-f branch",
+      "R enters safe projection independently of reports, H and z",
+      "conditional mathematical error bound under declared model"
+    ],
+    "controlled_identity_encoding": "Third complete row: neutral hatch; third source interval: neutral dashed line",
+    "report_header_fill_role": "text_red / text_teal",
+    "schematic_depth": {
+      "intervals": [
+        [
+          0.1,
+          0.62
+        ],
+        [
+          0.24,
+          0.72
+        ],
+        [
+          0.69,
+          0.89
+        ],
+        [
+          0.3,
+          0.57
+        ]
+      ],
+      "m": 4,
+      "f": 1,
+      "scan_q": 0.45,
+      "scan_depth": 3,
+      "retained_depth_region": [
+        0.3,
+        0.57
+      ],
+      "retained_hull": [
+        0.3,
+        0.57
+      ],
+      "status": "geometrically consistent illustration, not experimental data"
+    },
+    "schematic_projection_axis": {
+      "T": [
+        0.48,
+        1.75
+      ],
+      "H": [
+        0.66,
+        1.39
+      ],
+      "R": 0.615,
+      "S": [
+        0.775,
+        1.275
+      ],
+      "z": 1.65,
+      "projected_point": 1.275,
+      "status": "Unified drawing coordinates only; S=[u-R,l+R] intersect T"
+    },
+    "schematic_wls": {
+      "x_role": "uncertain public midpoint proxy d_j",
+      "y_role": "Y_ij",
+      "weights": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "marker_encoding": "area proportional to illustrative weight",
+      "residual_check": "weighted intercept and slope residual moments equal zero",
+      "status": "Synthetic explanatory geometry; no empirical result"
+    }
+  }
+]

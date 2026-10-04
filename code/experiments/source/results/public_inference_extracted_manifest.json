@@ -1,0 +1,37 @@
+{
+  "protocol_sha": "2b4cd2f77da6afa52edb6b9cdfb221e2dadbc685f0442af9f45ee6b0bd06b917",
+  "archive_sha": "f72e5c162bd86da145147dad62d8d039b237a9a48b1a5f72375ed8734ffbe873",
+  "dataset_sha": "4f51243708c7bdda26cf1e768f4a38b23088d3b804c1c51afc6095526d86623f",
+  "time_block": [
+    "2014-05-29",
+    "2014-06-25"
+  ],
+  "public_targets_planned": 224,
+  "anchor_observations_planned": 168,
+  "archive_records_scanned": 2891393,
+  "selected_records": 379,
+  "observed_numeric": 373,
+  "conflicted": 0,
+  "negative": 0,
+  "out_of_domain": 0,
+  "invalid": {
+    "missing_marker": 6
+  },
+  "unit": "station-time target, not worker",
+  "scope": "Later public time holdout, previously seen stations; semi-synthetic sources and intervals",
+  "target_stations": [
+    "001006",
+    "001007",
+    "001008",
+    "001015",
+    "001017",
+    "001018",
+    "001022",
+    "001029"
+  ],
+  "anchor_stations": [
+    "001003",
+    "001004",
+    "001005"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "procurement_budget": {
+    "2": 204,
+    "1": 27,
+    "3": 9
+  },
+  "procurement_precision": {
+    "1": 238,
+    "2": 91
+  },
+  "procurement_precision_by_r": {
+    "20": {
+      "2": 21
+    },
+    "50": {
+      "2": 68
+    },
+    "100": {
+      "1": 118,
+      "2": 2
+    },
+    "150": {
+      "1": 120
+    }
+  },
+  "public_budget": {
+    "1": 46,
+    "2": 10
+  },
+  "public_precision": {
+    "1": 71,
+    "2": 3
+  },
+  "public_precision_by_r": {
+    "20": {},
+    "50": {
+      "2": 2
+    },
+    "100": {
+      "1": 15,
+      "2": 1
+    },
+    "150": {
+      "1": 56
+    }
+  },
+  "public_plans_provenance": "public_inference_plans.json"
+}

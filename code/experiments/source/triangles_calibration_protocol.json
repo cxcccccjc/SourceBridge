@@ -1,0 +1,86 @@
+{
+  "stage": "Public-data development after prior assumption diagnostics; new splits are not new independent data or blind confirmation",
+  "seeds": [
+    108101,
+    108102,
+    108103,
+    108104,
+    108105,
+    108106,
+    108107,
+    108108,
+    108109,
+    108110,
+    108111,
+    108112,
+    108113,
+    108114,
+    108115,
+    108116,
+    108117,
+    108118,
+    108119,
+    108120,
+    108121,
+    108122,
+    108123,
+    108124,
+    108125,
+    108126,
+    108127,
+    108128,
+    108129,
+    108130,
+    108131,
+    108132
+  ],
+  "reference_budgets": [
+    3,
+    5,
+    8
+  ],
+  "fields": {
+    "1": [
+      "EstYCoor",
+      "ExpYCoor"
+    ],
+    "2": [
+      "EstYCoor",
+      "ExpYCoor"
+    ],
+    "3": [
+      "EstXCoor",
+      "ExpXCoor"
+    ],
+    "4": [
+      "EstAngle",
+      "ExpAngle"
+    ]
+  },
+  "source_identity": "SubjectID local to experiment and natural same-task-set cohort",
+  "reports": "Mean of all repeats for a worker/object; tasks-by-workers input",
+  "task_keys": "Angle and Base factor used ONLY to establish opaque object identity, never numerical inference features",
+  "split": "RNG(seed+100*experiment+cohort).permutation(15); first K references; all other entire objects held out for every worker",
+  "truth_visibility": "cal_truth supplied to methods; test_truth used only after prediction for metrics; complete unlabeled report graph is permitted to all methods",
+  "exclusion": "Constant-truth dimensions are not performance targets; previously retained as negative controls. No label-dependent object filtering.",
+  "bat_subset": {
+    "seeds": [
+      108101,
+      108102
+    ],
+    "budget": 5,
+    "initializations": [
+      17,
+      29,
+      41
+    ],
+    "expected_cases": 12
+  },
+  "raw_hashes": {
+    "Exp1data.csv": "c9fbc1a3cc872ae0bd49159b4ed45da5ca7a2caf7fa6b656b1ef03ff4478ba63",
+    "Exp2data.csv": "90d7e4601c91b5d378f33b10c7d8888192fc6f946f59dc3be62eb56c81b51382",
+    "Exp3data.csv": "bae5c4824339f150f2108711874749c7dddd61f7cbe2c8013f4fd119a52ab917",
+    "Exp4data.csv": "d512714fc53d0a9196959b97df056a7b2033ea6174e4959489cb2dafb4b5fa83"
+  },
+  "generator_sha256": "098dfeb7ace528c88eb8d75fdb80109b979cc7b28ef07f2caf2fd44d0fb390fd"
+}

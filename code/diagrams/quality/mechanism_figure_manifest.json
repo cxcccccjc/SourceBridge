@@ -1,0 +1,853 @@
+[
+  {
+    "figure": "acquisition",
+    "palette": "indigo_vivid",
+    "size_inches": [
+      3.5,
+      2.76
+    ],
+    "font": "C:\\Windows\\Fonts\\times.ttf",
+    "native_vector_geometry": true,
+    "raster_images_in_svg": false,
+    "provenance": "Original scientific primitives and manuscript-defined numbers; bundled Lucide role symbols",
+    "icon_provenance": "Bundled Lucide SVG paths in assets/lucide; ISC/MIT notices included; no raster assets",
+    "vector_patches": 53,
+    "vector_lines": 8,
+    "semantic_checks": {
+      "catalogue": [
+        [],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "P": [
+        1,
+        2
+      ],
+      "Q": [
+        2,
+        3
+      ],
+      "costs": [
+        3,
+        2,
+        4
+      ],
+      "union_cost": 9,
+      "shared_anchor_charged_once": true,
+      "shared_object_drawn_once": true,
+      "calibration_objects_are_columns_not_source_identities": true,
+      "report_matrix": {
+        "columns": [
+          1,
+          2,
+          3
+        ],
+        "rows": [
+          "1",
+          "ellipsis",
+          "m"
+        ]
+      },
+      "matrix_report_symbols_are_future_purchased_reports_not_preacquisition_inputs": true,
+      "public_rows": [
+        "I_j",
+        "epsilon_j"
+      ],
+      "directional_tests_are_symbolic": true,
+      "cost_composition": {
+        "segments": [
+          {
+            "object": 1,
+            "fee": 3,
+            "width_inches": 0.875
+          },
+          {
+            "object": 2,
+            "fee": 2,
+            "width_inches": 0.5833333333333334
+          },
+          {
+            "object": 3,
+            "fee": 4,
+            "width_inches": 1.1666666666666667
+          }
+        ],
+        "total": 9,
+        "proportional_widths": true,
+        "shared_object_has_one_segment": true,
+        "values_are_existing_illustration_not_experimental_results": true
+      },
+      "union_member_glyph": {
+        "members": [
+          1,
+          2,
+          3
+        ],
+        "shared_member": 2,
+        "memberships": {
+          "P": [
+            1,
+            2
+          ],
+          "Q": [
+            2,
+            3
+          ]
+        },
+        "shared_member_has_one_cell": true
+      },
+      "role_symbols": {
+        "catalog": "files",
+        "public_parameters": "sliders-horizontal",
+        "purchased_reports": "file-spreadsheet",
+        "purchase": "receipt-text"
+      },
+      "layout_geometry": {
+        "canvas": [
+          3.5,
+          2.9
+        ],
+        "stage_panels_unchanged": true,
+        "candidate_cards_unchanged": true,
+        "certificate_boxes_unchanged": true,
+        "union_cells_unchanged": true,
+        "matrix_bounds_unchanged": true,
+        "cost_strip_unchanged": true
+      },
+      "centered_container_text": {
+        "candidate_cards": true,
+        "certificate_groups": true,
+        "matrix_cells": true,
+        "cost_segment_labels": true
+      },
+      "reference_use": "PRBTD: aligned modules; QPTD: numbered stages and concrete report carriers"
+    },
+    "text_checks": [
+      {
+        "text": "1",
+        "size": 8.3,
+        "color": "#FFFFFF",
+        "clipped": false
+      },
+      {
+        "text": "Catalog: $|P|\\leq2$",
+        "size": 9.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$n=3$ example",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$\\varnothing$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "1",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "2",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "3",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "1,2",
+        "size": 8.3,
+        "color": "#214C9A",
+        "clipped": false
+      },
+      {
+        "text": "1,3",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "2,3",
+        "size": 8.3,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "2",
+        "size": 8.3,
+        "color": "#FFFFFF",
+        "clipped": false
+      },
+      {
+        "text": "Directional certificates",
+        "size": 9.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$P=\\{1,2\\}\\quad W_+(P)\\leq\\tau$",
+        "size": 8.5,
+        "color": "#214C9A",
+        "clipped": false
+      },
+      {
+        "text": "$Q=\\{2,3\\}\\quad W_-(Q)\\leq\\tau$",
+        "size": 8.5,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "1",
+        "size": 8.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "2",
+        "size": 8.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "3",
+        "size": 8.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "3",
+        "size": 8.3,
+        "color": "#FFFFFF",
+        "clipped": false
+      },
+      {
+        "text": "Purchase $A=P\\cup Q$",
+        "size": 9.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "Charge once",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_1$",
+        "size": 8.5,
+        "color": "#214C9A",
+        "clipped": false
+      },
+      {
+        "text": "$(I_1,\\epsilon_1)$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{11}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$\\vdots$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{m1}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_2$ (shared)",
+        "size": 8.5,
+        "color": "#864E07",
+        "clipped": false
+      },
+      {
+        "text": "$(I_2,\\epsilon_2)$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{12}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$\\vdots$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{m2}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_3$",
+        "size": 8.5,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "$(I_3,\\epsilon_3)$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{13}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$\\vdots$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_{m3}$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "Public",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "Reports",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "Cost split",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_1:\\,3$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_2:\\,2$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$j_3:\\,4$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$C(P\\cup Q)-C_0=3+2+4=9$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      }
+    ],
+    "text_text_overlaps": 0,
+    "exports": {
+      "svg": {
+        "path": "code/diagrams/figures/acquisition.svg",
+        "sha256": "593089410fdf67ea1e7d2355562153506fda4444e8a27fe49f77ceb79aae8493"
+      },
+      "pdf": {
+        "path": "code/diagrams/figures/acquisition.pdf",
+        "sha256": "afe179f259f34cd76c23a5821de3b399ebb2d0032ee95a97fa10624ce34e0134"
+      },
+      "png": {
+        "path": "code/diagrams/figures/acquisition.png",
+        "sha256": "0cb042256dec46f23a46a865a5de23c41e306197d71c21087d5afdff92912501"
+      }
+    }
+  },
+  {
+    "figure": "geometry",
+    "palette": "indigo_vivid",
+    "size_inches": [
+      3.5,
+      2.76
+    ],
+    "font": "C:\\Windows\\Fonts\\times.ttf",
+    "native_vector_geometry": true,
+    "raster_images_in_svg": false,
+    "provenance": "Original scientific primitives and manuscript-defined numbers; bundled Lucide role symbols",
+    "icon_provenance": "Bundled Lucide SVG paths in assets/lucide; ISC/MIT notices included; no raster assets",
+    "vector_patches": 35,
+    "vector_lines": 43,
+    "semantic_checks": {
+      "T": [
+        0,
+        10
+      ],
+      "gains": [
+        1,
+        2
+      ],
+      "error": 0,
+      "anchor": [
+        0,
+        0
+      ],
+      "worlds": [
+        {
+          "a": 2,
+          "q": 5,
+          "packet": [
+            0,
+            10
+          ]
+        },
+        {
+          "a": 1,
+          "q": 10,
+          "packet": [
+            0,
+            10
+          ]
+        }
+      ],
+      "analytic_response_axes": {
+        "q": [
+          0,
+          10
+        ],
+        "Y": [
+          0,
+          20
+        ]
+      },
+      "analytic_responses": [
+        "Y=2q",
+        "Y=q"
+      ],
+      "shaded_region": "Y between q and 2q for q in [0,10]",
+      "common_report_line": 10,
+      "common_report_intersections": [
+        [
+          5,
+          10
+        ],
+        [
+          10,
+          10
+        ]
+      ],
+      "analytic_curves_are_not_experimental_data": true,
+      "W": 5,
+      "R": 2.5,
+      "observed_Yt": 6,
+      "H": [
+        3.0,
+        6.0
+      ],
+      "S": [
+        3.5,
+        5.5
+      ],
+      "z": 7,
+      "output": 5.5,
+      "observed_width": 3,
+      "distinguishes_observed_and_worst_width": true,
+      "projection_onto": "S, not H",
+      "nominal_is_illustrative_not_measured_mlni": true,
+      "world_marker_keys": {
+        "A": "hollow circle",
+        "B": "hollow square"
+      },
+      "heading_bands_do_not_encode_values": true,
+      "safe_interval_enhancement_changes_only_vertical_thickness": true,
+      "shared_report_glyph": {
+        "report_Yt": 10,
+        "one_page": true,
+        "inputs": [
+          "world A",
+          "world B"
+        ],
+        "anchor_Y1": 0
+      },
+      "safe_range_guide": {
+        "endpoints": [
+          3.5,
+          5.5
+        ],
+        "same_x_axis_as_H_and_T": true,
+        "example_specific": true,
+        "does_not_claim_general_S_subset_H": true
+      },
+      "derived_endpoint_distance_inset": {
+        "estimate": 5.5,
+        "hull_endpoints": [
+          3,
+          6
+        ],
+        "distances": [
+          2.5,
+          0.5
+        ],
+        "max_distance": 2.5,
+        "equals_R": true,
+        "local_ruler_segment_ratio": [
+          5,
+          1
+        ],
+        "local_ruler_not_main_axis": true,
+        "unknown_true_q": true,
+        "not_measured_prediction_error": true,
+        "bounds_inches": [
+          0.28,
+          0.245,
+          1.08,
+          0.5
+        ],
+        "text_centered_and_contained": true
+      },
+      "role_symbols": {
+        "gain_conditions": "sliders-horizontal",
+        "shared_report": "scan-line",
+        "safe_projection": "target"
+      },
+      "layout_geometry": {
+        "canvas": [
+          3.5,
+          2.9
+        ],
+        "upper_panel": [
+          0.075,
+          1.285,
+          3.35,
+          1.6
+        ],
+        "lower_panel": [
+          0.075,
+          0.025,
+          3.35,
+          1.24
+        ],
+        "analytic_plot_unchanged": true,
+        "world_cards_unchanged": true,
+        "report_page_unchanged": true,
+        "lower_coordinate_window": [
+          0.655,
+          0.245,
+          2.49,
+          0.645
+        ],
+        "H_y": 0.815,
+        "S_y": 0.475,
+        "T_y": 0.195,
+        "main_q_map": [
+          0.69,
+          2.42,
+          0,
+          10
+        ]
+      },
+      "panel_map": {
+        "a": "Before acquisition: worst-case same-report ambiguity",
+        "b": "After a distinct observation: hull and safe projection"
+      }
+    },
+    "text_checks": [
+      {
+        "text": "(a) Same-report ambiguity",
+        "size": 9.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$T=[0,10],\\quad a\\in[1,2],\\quad\\epsilon=0$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "0",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "10",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "20",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "0",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "5",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "10",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$q_t$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "A",
+        "size": 8.3,
+        "color": "#214C9A",
+        "clipped": false
+      },
+      {
+        "text": "B",
+        "size": 8.3,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "$a=2$",
+        "size": 8.3,
+        "color": "#214C9A",
+        "clipped": false
+      },
+      {
+        "text": "$a=1$",
+        "size": 8.3,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "$q_1=Y_1=0$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$\\Rightarrow b=0$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "A: $(q_t,a)=(5,2)$",
+        "size": 8.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "B: $(q_t,a)=(10,1)$",
+        "size": 8.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_t=10$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$W=5$",
+        "size": 8.5,
+        "color": "#864E07",
+        "clipped": false
+      },
+      {
+        "text": "$R=W/2=2.5$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "(b) Safe projection",
+        "size": 9.1,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$Y_t=6$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$S=T\\cap[u-R,\\ell+R]$",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$H$",
+        "size": 8.5,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "$S$",
+        "size": 8.5,
+        "color": "#864E07",
+        "clipped": false
+      },
+      {
+        "text": "$T$",
+        "size": 8.5,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "0",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "5",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "10",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "3",
+        "size": 8.5,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "6",
+        "size": 8.5,
+        "color": "#076659",
+        "clipped": false
+      },
+      {
+        "text": "width = 3",
+        "size": 8.3,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "3.5",
+        "size": 8.5,
+        "color": "#864E07",
+        "clipped": false
+      },
+      {
+        "text": "$z=7$",
+        "size": 8.5,
+        "color": "#79408D",
+        "clipped": false
+      },
+      {
+        "text": "$\\widehat q=5.5$",
+        "size": 8.5,
+        "color": "#864E07",
+        "clipped": false
+      },
+      {
+        "text": "Endpoint distance",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$|\\widehat q-3|=2.5=R$",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      },
+      {
+        "text": "$|6-\\widehat q|=0.5\\leq R$",
+        "size": 8.0,
+        "color": "#000000",
+        "clipped": false
+      }
+    ],
+    "text_text_overlaps": 0,
+    "exports": {
+      "svg": {
+        "path": "code/diagrams/figures/geometry.svg",
+        "sha256": "3b2104b8caffbd0df119cd1f39f2cdf44e1b6b798957ff17d75d646e42e2da04"
+      },
+      "pdf": {
+        "path": "code/diagrams/figures/geometry.pdf",
+        "sha256": "f3d8d484cc8618e3b809f90be2858d1b0c44f1d25f59acc0b463851f6bce6877"
+      },
+      "png": {
+        "path": "code/diagrams/figures/geometry.png",
+        "sha256": "5a3ddd20a54c87d7e47d6207db4c9040ccaea8826c414a48872f5e9e475785b2"
+      }
+    }
+  }
+]

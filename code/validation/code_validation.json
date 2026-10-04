@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "python_files": 53,
+  "scientific_functions_preserved": [
+    {
+      "module": "mlni_calibration.py",
+      "original_functions_and_classes": 11,
+      "all_retained": true
+    },
+    {
+      "module": "group_methods.py",
+      "original_functions_and_classes": 12,
+      "all_retained": true
+    },
+    {
+      "module": "eptd_inference.py",
+      "original_functions_and_classes": 7,
+      "all_retained": true
+    },
+    {
+      "module": "acquisition_evaluation.py",
+      "original_functions_and_classes": 24,
+      "all_retained": true
+    },
+    {
+      "module": "additive_selection.py",
+      "original_functions_and_classes": 6,
+      "all_retained": true
+    },
+    {
+      "module": "catalog_selection.py",
+      "original_functions_and_classes": 2,
+      "all_retained": true
+    },
+    {
+      "module": "certified_geometry.py",
+      "original_functions_and_classes": 7,
+      "all_retained": true
+    },
+    {
+      "module": "safe_projection.py",
+      "original_functions_and_classes": 10,
+      "all_retained": true
+    },
+    {
+      "module": "packet_geometry.py",
+      "original_functions_and_classes": 2,
+      "all_retained": true
+    },
+    {
+      "module": "reference_geometry.py",
+      "original_functions_and_classes": 7,
+      "all_retained": true
+    },
+    {
+      "module": "public_source_generation.py",
+      "original_functions_and_classes": 18,
+      "all_retained": true
+    },
+    {
+      "module": "public_inference.py",
+      "original_functions_and_classes": 16,
+      "all_retained": true
+    },
+    {
+      "module": "robust_doptimal.py",
+      "original_functions_and_classes": 8,
+      "all_retained": true
+    },
+    {
+      "module": "simulated_inference.py",
+      "original_functions_and_classes": 20,
+      "all_retained": true
+    },
+    {
+      "module": "analyze_simulated_inference.py",
+      "original_functions_and_classes": 1,
+      "all_retained": true
+    },
+    {
+      "module": "weighted_inference.py",
+      "original_functions_and_classes": 18,
+      "all_retained": true
+    },
+    {
+      "module": "air_quality_baselines.py",
+      "original_functions_and_classes": 19,
+      "all_retained": true
+    },
+    {
+      "module": "spptd_plaintext_core.py",
+      "original_functions_and_classes": 11,
+      "all_retained": true
+    },
+    {
+      "module": "batch_baselines.py",
+      "original_functions_and_classes": 5,
+      "all_retained": true
+    },
+    {
+      "module": "procurement.py",
+      "original_functions_and_classes": 13,
+      "all_retained": true
+    },
+    {
+      "module": "attack_evaluation.py",
+      "original_functions_and_classes": 11,
+      "all_retained": true
+    },
+    {
+      "module": "selection_scaling.py",
+      "original_functions_and_classes": 7,
+      "all_retained": true
+    },
+    {
+      "module": "summarize_selection_scaling.py",
+      "original_functions_and_classes": 2,
+      "all_retained": true
+    },
+    {
+      "module": "audit_selection_scaling.py",
+      "original_functions_and_classes": 5,
+      "all_retained": true
+    },
+    {
+      "module": "audit_procurement.py",
+      "original_functions_and_classes": 9,
+      "all_retained": true
+    },
+    {
+      "module": "packet_attacks.py",
+      "original_functions_and_classes": 11,
+      "all_retained": true
+    },
+    {
+      "module": "check_additive_combinatorics.py",
+      "original_functions_and_classes": 6,
+      "all_retained": true
+    },
+    {
+      "module": "analyze_acquisition.py",
+      "original_functions_and_classes": 6,
+      "all_retained": true
+    }
+  ],
+  "no_scientific_functions_removed": true,
+  "numeric_and_fixture_files_byte_identical": 88,
+  "checks": [
+    {
+      "check": "scientific_imports",
+      "status": "PASS"
+    },
+    {
+      "check": "complete_reanalysis",
+      "status": "PASS"
+    },
+    {
+      "check": "model_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "procurement_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "greedy_ranking",
+      "status": "PASS"
+    },
+    {
+      "check": "feasible_deletion",
+      "status": "PASS"
+    },
+    {
+      "check": "timing_verification",
+      "status": "PASS"
+    },
+    {
+      "check": "timing_catalog_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "independent_geometry",
+      "status": "PASS"
+    },
+    {
+      "check": "plot_metric_derivation",
+      "status": "PASS"
+    },
+    {
+      "check": "error_metric_derivation",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Frozen evidence reanalysis and bounded model/geometry replay; no full experiment rerun.",
+  "model_replay": {
+    "status": "PASS",
+    "scope": "Actual recomputation of frozen purchased input. Recomputation from frozen observations.",
+    "cases": 64,
+    "event_ids": [
+      "2014-05-29_001006",
+      "2014-06-25_001029"
+    ],
+    "all_15_interfaces": true,
+    "prediction_checks": 960,
+    "status_checks": 960,
+    "exact_packet_certificates_equal": 64,
+    "maximum_absolute_prediction_difference": 0,
+    "elapsed_seconds": 1.1620091999648139,
+    "evaluator_truth_loaded": false,
+    "source_write_guard": true,
+    "protocol_sha": "2b4cd2f77da6afa52edb6b9cdfb221e2dadbc685f0442af9f45ee6b0bd06b917",
+    "purchased_input_sha": "24fe321dadced5b5e78c4913aa4252a22a77ea920d24e30b7c1586b677c8a4c3"
+  },
+  "all_python_filenames_formal": true,
+  "experimental_png_exports_identical": [
+    "catalog_reuse",
+    "joint_selection",
+    "procurement",
+    "procurement_regimes",
+    "robustness",
+    "scaling",
+    "supp_conditional_inference",
+    "supp_procurement_coverage"
+  ],
+  "portable_input_generation_verified": true,
+  "full_generation_workflow_reexecuted": false,
+  "external_data_required_for_archive_reextraction": "Original MSRA Data-1.zip; compact extracted values are bundled for primary input generation."
+}

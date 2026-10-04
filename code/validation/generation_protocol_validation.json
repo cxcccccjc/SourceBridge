@@ -1,0 +1,22 @@
+[
+  {
+    "module": "public_inference",
+    "status": "PASS"
+  },
+  {
+    "module": "public_source_generation",
+    "status": "PASS"
+  },
+  {
+    "module": "procurement",
+    "status": "PASS"
+  },
+  {
+    "module": "attack_evaluation",
+    "status": "PASS"
+  },
+  {
+    "module": "selection_scaling",
+    "status": "PASS"
+  }
+]

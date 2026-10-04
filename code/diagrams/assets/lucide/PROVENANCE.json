@@ -1,0 +1,94 @@
+{
+  "library": "Lucide",
+  "source": "https://lucide.dev/",
+  "retrieved": "2026-10-04",
+  "license": "ISC, with included MIT/Feather notices; complete upstream LICENSE bundled",
+  "usage": "Role illustrations rendered as editable vector geometry; no empirical evidence encoded",
+  "assets": [
+    {
+      "file": "chart-scatter.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-scatter.svg",
+      "sha256": "17dbdf3da5309c6090ce60037a8ad2125bdfecfbe853c0019034294c0a8f3ce1",
+      "intended_role": "Weighted forward regression"
+    },
+    {
+      "file": "database.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg",
+      "sha256": "471eb14bc8d144896a82dfc4aa9daf350f769f0896f4bef33e50aabdbb51130d",
+      "intended_role": "Public catalog"
+    },
+    {
+      "file": "file-spreadsheet.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-spreadsheet.svg",
+      "sha256": "69960bb43dec3b66f0d1c2dd26c2f637a10540b8bea4ffb90f8764a8404016a0",
+      "intended_role": "Report matrix"
+    },
+    {
+      "file": "files.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/files.svg",
+      "sha256": "97adf06fc0511e7a40be93ecda04466ed196718ab4a5e3a62b1148cc49697775",
+      "intended_role": "Complete source reports"
+    },
+    {
+      "file": "iteration-cw.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/iteration-cw.svg",
+      "sha256": "6eb0e685a04b0e449b060375402aec8f9b35ba79a1ee545bf6f4802fbd160625",
+      "intended_role": "Iterative block updates"
+    },
+    {
+      "file": "layers.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/layers.svg",
+      "sha256": "ce16d0a955e3581cda17f6b2fd5c5bc2034b405f9cecc31c8ebb8495b4afc1bb",
+      "intended_role": "Support and acquisition sets"
+    },
+    {
+      "file": "map-pin.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/map-pin.svg",
+      "sha256": "16f1042a62f1bda20ebab8bfc1cb79c0be285c980dea6c2c733a17902631405b",
+      "intended_role": "Sensing location"
+    },
+    {
+      "file": "receipt-text.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/receipt-text.svg",
+      "sha256": "35b44cd6ce443dc58119380750d6bc12b6dbead1cac23e7ac3dc578d52795bf4",
+      "intended_role": "Pre-report quote"
+    },
+    {
+      "file": "ruler.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/ruler.svg",
+      "sha256": "af9710f70510217ef33773d502d0be2425c3a9cb1e3294ace27da9f0b4c8850b",
+      "intended_role": "Interval and radius"
+    },
+    {
+      "file": "scan-line.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/scan-line.svg",
+      "sha256": "d17ec0ebae568a92e18e18968bb85658fec088bc3d97b92b729df6f7f9c4848e",
+      "intended_role": "Interval-depth scan"
+    },
+    {
+      "file": "sigma.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sigma.svg",
+      "sha256": "4479d09dc10cbfcefc7f112ce6fd825da57779aa60d6d83f62882aa78421da18",
+      "intended_role": "Nominal statistical updates"
+    },
+    {
+      "file": "sliders-horizontal.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sliders-horizontal.svg",
+      "sha256": "e43a00e5eb684e6cbb61083bed2528d7a3fa5f265693eb2b5f314cd432aa65f4",
+      "intended_role": "Public parameter ranges"
+    },
+    {
+      "file": "target.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/target.svg",
+      "sha256": "96a6b16628825a1a207a77e9a5818f74c3e74ea3664783ff5c2a44e6347b90df",
+      "intended_role": "Precision request and projection"
+    },
+    {
+      "file": "workflow.svg",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/workflow.svg",
+      "sha256": "ae99ea8f56a2835a2cca35b2fbb57643ab73443610970dba23e24bd9df75cfec",
+      "intended_role": "Processing flow"
+    }
+  ],
+  "license_sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+}

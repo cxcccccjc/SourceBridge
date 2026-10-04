@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "9e84f0a55f805f096c8134aa28645a7b1cbd00530515f2c057292449f7fec7d3",
+  "timings_sha256": "19c3948db8ccf34152df6d8fc39efd19b1f56ae8da77a5896fe71dbc1cc8d2e1",
+  "timing_finished_before_verification": true,
+  "scope": "Agreement on saved floating LP catalogs, not an exact proof of original LP optima",
+  "compared_conditions": 16,
+  "warmup_calls": 32,
+  "timed_calls": 96,
+  "fields": [
+    "selection_bound",
+    "union_cost",
+    "union_cardinality",
+    "sorted_union_ids"
+  ],
+  "checks": [
+    {
+      "condition_id": "n8_s731991_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        41.1665026304198,
+        4,
+        2,
+        [
+          0,
+          7
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n8_s731991_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        39.79932139494727,
+        6,
+        2,
+        [
+          0,
+          6
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n8_s731992_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        75.95403635088316,
+        4,
+        2,
+        [
+          1,
+          5
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n8_s731992_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        75.95403635088316,
+        4,
+        2,
+        [
+          1,
+          5
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n16_s731991_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        36.961043944787455,
+        4,
+        2,
+        [
+          4,
+          5
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n16_s731991_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        35.39391727243153,
+        5,
+        2,
+        [
+          4,
+          10
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n16_s731992_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        36.709100694847336,
+        3,
+        2,
+        [
+          14,
+          15
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n16_s731992_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        36.658221101062736,
+        5,
+        3,
+        [
+          1,
+          14,
+          15
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n32_s731991_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        34.61958256017083,
+        4,
+        2,
+        [
+          2,
+          27
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n32_s731991_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        34.61958256017083,
+        4,
+        2,
+        [
+          2,
+          27
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n32_s731992_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        38.56367888709629,
+        4,
+        2,
+        [
+          4,
+          16
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n32_s731992_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        34.59559210272448,
+        6,
+        2,
+        [
+          4,
+          15
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n64_s731991_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        35.54340290335038,
+        3,
+        2,
+        [
+          24,
+          55
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n64_s731991_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        33.0021671808787,
+        8,
+        2,
+        [
+          7,
+          48
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n64_s731992_B4",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        30.07482643913943,
+        3,
+        2,
+        [
+          35,
+          54
+        ]
+      ],
+      "issues": []
+    },
+    {
+      "condition_id": "n64_s731992_B8",
+      "status": "PASS",
+      "calls": 8,
+      "selected_key": [
+        28.585682667952142,
+        5,
+        2,
+        [
+          41,
+          54
+        ]
+      ],
+      "issues": []
+    }
+  ],
+  "failures": []
+}

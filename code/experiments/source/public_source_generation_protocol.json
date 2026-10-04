@@ -1,0 +1,125 @@
+{
+  "status": "FROZEN_BEFORE_HOLDOUT_VALUE_READ_AND_EXECUTION",
+  "scope": "Strict public station/time holdout; sources and trusted intervals semi-synthetic",
+  "dataset": "data/msra_urban_air/interface/beijing_first28days_all_pollutants.npz",
+  "dataset_sha": "110e37b15b171cbbe596316f9340950d549248ea8da4bf73cf8ca8c9a8d51b40",
+  "days": [
+    "2014-05-22",
+    "2014-05-23",
+    "2014-05-24",
+    "2014-05-25",
+    "2014-05-26",
+    "2014-05-27",
+    "2014-05-28"
+  ],
+  "target_stations": [
+    "001006",
+    "001007",
+    "001008",
+    "001015",
+    "001017",
+    "001018",
+    "001022",
+    "001029"
+  ],
+  "target_hour": 12,
+  "anchor_stations": [
+    "001003",
+    "001004",
+    "001005"
+  ],
+  "anchor_hours": [
+    11,
+    13
+  ],
+  "pollutant": "PM25_Concentration",
+  "profiles": {
+    "exact": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "heterogeneous": [
+      2,
+      5,
+      10,
+      20,
+      40,
+      80
+    ]
+  },
+  "costs": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+  ],
+  "budget": 4,
+  "radii": [
+    20,
+    50,
+    100,
+    150
+  ],
+  "target": [
+    0.0,
+    500.0
+  ],
+  "gain_bounds": [
+    0.7,
+    1.3
+  ],
+  "epsilon": 5.0,
+  "m": 9,
+  "f": 2,
+  "nominal": "MLNI_JSAC2022__weighted_source_affine",
+  "target_shifts": [
+    -80,
+    -20,
+    -5,
+    5,
+    20,
+    80
+  ],
+  "spoof_gains": [
+    0.7,
+    1.3
+  ],
+  "spoof_targets": [
+    0,
+    250,
+    500
+  ],
+  "translation_controls": [
+    -200,
+    200
+  ],
+  "source_seed": "first8bytes sha256(SourceBridge-public-confirmation-v1:day|station), big endian",
+  "interval_seed": "same hash of interval|day",
+  "source_hashes": {
+    "audit_triangles_calibration.py": "863d39e54678122e3a9356f8abda12284f7cf901e33bb7abbd543c3736f736fc",
+    "data/msra_urban_air/subset_protocol.json": "19f9f6ec4d64c72b20e1dcb1bf7304384e2df34e4f0703b51c90f54da2f0eb45",
+    "literature_baseline_extra.py": "5353d2f9888434a9e7cbf59b636f1e57faad9a44ade2945e07dadcb50e2163e8",
+    "source_bridge_acquisition_benchmark.py": "c9312164da4bc5db5ad62b735ba5bc5e8578540f8979ea489b5d0590303dd99a",
+    "source_bridge_additive_design.py": "83988817aa1313f7469ebd5a9453c3949b2e3e870727bbaf6b83437ad5f1bdca",
+    "source_bridge_anchor_design.py": "0e1ccd010a30abf9d1cf27ea315c99596d35f13f70fc11b18fe6628fa6b9d847",
+    "source_bridge_certified_reference.py": "7fde2b1d6c0182e8af11baba1db71affad9ece377169445cdbfb1aba72f6f202",
+    "source_bridge_nominal_projection.py": "f4b21359107e1676368033f288d62c5749140cdae9408d198431f4e7f2993bd9",
+    "source_bridge_packet_inference.py": "c2ef07f6bf2923a705b645c52a02b7489b57fbd343e4d5a768f3c43ea35f2f1b",
+    "source_bridge_prequery_exact.py": "bff5761f4047518a9ada6a2e3942e165195656352313a1d63f965987894c1fed",
+    "source_bridge_public_confirmation.py": "82abad86fcbf9869c83f92738fc73b13ea110eb0a0df941106ddc5ab74066b15",
+    "source_bridge_public_confirmation_protocol.md": "b9c6f119c9d23ae392f6b1fb8d3b4d47807f874c5a18c11ed779e0590f563ced",
+    "source_bridge_span_diagnostic.py": "7c1d425e77983ffc384d85e4cf57f085113a54dddeb8af75759192bda662a7d4",
+    "source_bridge_span_diagnostic_analyze.py": "ac13b4a420a612a3ec66352ec399b86eb1dc8457e52d4436dfdce04e48881605",
+    "source_bridge_span_diagnostic_protocol.json": "056fe2bb1d4a2d4ed418b70b0bb1f6174067ce8c493b3cee74d9ba60933699e1",
+    "source_bridge_span_diagnostic_protocol.md": "9dc0e0328174c5e299395697c7fe892c89539ec1ed33c0bb213beaa8ed9d2551",
+    "source_bridge_weighted_adapter_control.py": "87b82fe9b2670649a87f54f9e8e642d8241ea3ca0a56719214760277b1286bda",
+    "spptd_msra_benchmark.py": "6b89f2008d6906cfb3b93111a4f0ded4ae410064ee6eae324c823346e24f2358",
+    "triangles_batch_cores.py": "555c6d041a51d8d4ceb9f832612682c79d053ff9be5de8670cb225cd02b1193c"
+  }
+}

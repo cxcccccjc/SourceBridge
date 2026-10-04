@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "date": "2026-09-30",
+  "status": "FROZEN_BEFORE_CLEANUP_EXECUTION",
+  "scope": "Post-review strengthened diagnostic on the same 480 frozen precision requests; no new dataset, blind confirmation, or literature baseline.",
+  "source_greedy_sha256": "ab0533034d4c68222b2af2c35878c5263dc1cb82adc66d5b151e1dd00fe2cda0",
+  "source_greedy_protocol_sha256": "3f03b00ffb90219d803a438b4dbf4862e47ef67a9486e07bfa4d1f0e25d5c178",
+  "source_runs_sha256": "b8ae461f4e322d53cafd0e14fad62fcafb712c086316422dca81f73d06619ff6",
+  "source_inputs_sha256": "1acd374ee40571533e3efb80163974408a37606fbe034f6b6b84fa025abdca59",
+  "initial": "Each saved original greedy precision-query set, unchanged.",
+  "deletion_eligibility": "An existing anchor j can be deleted exactly when W(S without j)<=2r; evaluate with the frozen exact-rational catalog.",
+  "deletion_choice": "Delete the eligible anchor with largest individual acquisition cost; ties choose smaller anchor ID.",
+  "stop": "No single deletion preserves the requested precision. No swaps, additions, or subset replacement are performed.",
+  "unreachable": "Preserve the original globally unreachable result and set; no deletion is attempted and no finite successful-service cost is assigned.",
+  "retention": "All 480 queries, complete per-step eligible candidates and exact widths, original and cleaned sets/costs, exact optimum, 24 span/profile/radius strata and all 20 seeds. Preserve the uncleaned control and all earlier results.",
+  "metrics": "Among 329 feasible requests: gap/tie counts, mean total cost gap, mean fractional optimum saving relative to cleaned greedy cost, reverse excess relative to optimum, support sizes, number of requests improved by deletion, formerly suboptimal requests brought to optimum cost, and remaining cost gaps.",
+  "statistics": {
+    "replicates": 20000,
+    "seed": 2026093003,
+    "unit": "20 paired source-generation seeds; all six pools and all four requests of each seed are resampled together.",
+    "interval": "Descriptive percentile 95% interval for aggregate conditional mean over all reachable requests in the sampled seed clusters; not a confirmatory or familywise test."
+  },
+  "label": "Cost-efficiency greedy + deletion cleanup (diagnostic control)",
+  "no_retuning": true
+}
