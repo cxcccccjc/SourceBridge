@@ -103,7 +103,9 @@ NPZ 内记录的原始标识及哈希属于数据身份，不作为代码版本�
   inference_timing_distribution.json 已含每个独立拟合的完整计时观察值。
   extract_inference_timings.py 可在提供原始明细时重新提取，并严格校验原哈希。
 
-  数值文件原始字节保持不变。代码名称、导入路径与说明规范化后，source_identity
+  预测CSV及科学实现原始字节保持不变。公开发布仅将5个JSON文件中的本机路径
+  改为文件名或相对路径，全部数值保持不变，变更记录见PUBLICATION_PROVENANCE.json。
+  代码名称、导入路径与说明规范化后，source_identity
   同时保留原记录哈希和当前发布代码哈希；verify_identity 同时检查二者，不将
   改名后的代码字节冒充原文件。resource_names 只解析冻结记录中的原资源名称。
   公开数据目标、攻击重复、参考配置之间的相关性，以及事后描述性汇总范围，
